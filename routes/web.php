@@ -11,5 +11,3 @@ Route::get('/web', function () {
 Route::get('/resume', function () {
     return view('resume');
 });
-
-require __DIR__.'/auth.php';

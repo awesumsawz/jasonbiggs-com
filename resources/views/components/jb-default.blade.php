@@ -9,7 +9,7 @@
 
 <body>
     <header id="main-menu" class="topbar navbar">
-        section.title
+        @include('components.jb-header')
     </header>
     <main>
         <div>
@@ -19,7 +19,7 @@
     </main>
     <footer>
         <div>
-            {{ $footer }}
+            {{-- {{ $footer }} --}}
         </div>
     </footer>
     </body>
