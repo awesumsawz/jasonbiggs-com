@@ -1,0 +1,345 @@
+/* ****************************************************************************
+ * INDEX
+ * ****************************************************************************
+ * 00 - ROOT VARS
+ * 01 - FONTS
+ * ****************************************************************************
+ * NOTES
+ * ****************************************************************************
+ * ----------------------------------------------------------------------------
+ * - Fonts used are Open Sans (Google Fonts) and DDC Hardware (Licensed from 
+ *   Aaron Draplin's ddcfonts.com)
+ * - Page Breaks
+ * 		- Desktop: 	>50em (800px)
+ *		- Tablet:		<50em (800px)
+ *		- Mobile:		<30em (480px)
+ *		- xsmall:		<20em (320px)
+ * ****************************************************************************
+ * ****************************************************************************
+ * 00 --- ROOT ATTS
+ * ****************************************************************************
+ * changes applied to the entire site - relating to fonts
+ * ----------------------------------------------------------------------------
+ * ----------------------------------------------------------------------------
+ * COLOR VARS
+ * ----------------------------------------------------------------------------
+ */
+:root {
+	/* primary: green */
+	--color-primary-light:    #03d898;
+	--color-primary:          #03a678;
+	--color-primary-hover:    #02745f;
+	--color-primary-dark:     #014141;
+
+	/* secondary: orange */
+	--color-secondary-light:	#fcb336;
+	--color-secondary:        #f07605;
+	--color-secondary-hover:	#721703;
+	--color-secondary-dark:	  #360302;
+
+  /* shades */
+	--white:        #FFFFFF;
+	--light-gray:   #CCCCCC;
+	--mid-gray:     #999999;
+	--dark-gray:    #666666;
+	--black:        #333333;
+	--true-black:   #000000;
+}
+
+ /* ----------------------------------------------------------------------------
+  * FONT VARS
+  * ----------------------------------------------------------------------------
+  */
+:root {
+	/* font-families */
+	--font-display: 'DDC Hardware', sans-sarif;
+	--font-mono:    'Roboto Mono', sans-sarif;
+	--font-sans:    'Open Sans', sans-sarif;
+
+	/* font-sizes */
+	--font-size-p:   1.6rem;
+	--font-size-h1:  4rem;
+	--font-size-h2:  3.6rem;
+	--font-size-h3:  3.2rem;
+	--font-size-h4:  2.6rem;
+	--font-size-h5:  2.2rem;
+	--font-size-h6:  1.8rem;
+
+	/* font-weights */
+	--font-weight-p:     normal;
+	--font-weight-h1:    normal;
+	--font-weight-h2:    normal;
+	--font-weight-h3:    800;
+	--font-weight-h4:    800;
+	--font-weight-h5:    300;
+	--font-weight-h6:    800;
+
+	/* font-margins */
+	--font-margin-p:     0 0 1rem; /* must manually inherit this value from the "standard-spacing" variable */
+	--font-margin-h1:    0 0 1rem; /* must manually inherit this value from the "standard-spacing" variable */
+	--font-margin-h2:    0 0 1rem; /* must manually inherit this value from the "standard-spacing" variable */
+	--font-margin-h3:    0; /* must manually inherit this value from the "standard-spacing" variable */
+	--font-margin-h4:    0; /* must manually inherit this value from the "standard-spacing" variable */
+	--font-margin-h5:    0; /* must manually inherit this value from the "standard-spacing" variable */
+	--font-margin-h6:    0; /* must manually inherit this value from the "standard-spacing" variable */
+	
+	--line-height-p:	1.5;
+	--line-height-h1:	1.2;
+	--line-height-h2: 1.2;
+	--line-height-h3:	1.2;
+	--line-height-h4:	1.2;
+	--line-height-h5:	1.2;
+	--line-height-h6:	1.2;
+	
+}
+
+ /* ----------------------------------------------------------------------------
+  * SPACIAL VARS
+  * ----------------------------------------------------------------------------
+  */
+:root {
+	/* border-radius */
+	--radius-square:    0px;
+	--radius-standard:  20px;
+	--radius-round:     100px;
+
+	/* element spacing (margin & padding) */
+	--spacing-xnarrow:      1rem;
+	--spacing-narrow:       2rem;
+	--spacing-standard:     3rem;
+	--spacing-wide:         4rem;
+	--spacing-xwide:        5rem;
+
+	/* z-index */
+	--zindex-bottom:    0;
+	--zindex-xlow:      100;
+	--zindex-low:       200;
+	--zindex-standard:  500;
+	--zindex-high:      800;
+	--zindex-xhigh:     900;
+	--zindex-top:       1000;
+}
+
+/* ----------------------------------------------------------------------------
+ * LAYERING VARS
+ * ----------------------------------------------------------------------------
+ */
+:root {
+	--shadow-layer0: 	drop-shadow(1px 1px 2px rgb(51, 51, 51, 60%));
+	--shadow-layer1: 	drop-shadow(3px 3px 3px rgb(51, 51, 51, 60%));
+	--shadow-layer2: 	drop-shadow(5px 5px 4px rgb(51, 51, 51, 60%));
+
+	--shadow-layer0-inverse: 	drop-shadow(-1px -1px 2px rgb(51, 51, 51, 60%));
+	--shadow-layer1-inverse: 	drop-shadow(-3px -3px 3px rgb(51, 51, 51, 60%));
+	--shadow-layer2-inverse: 	drop-shadow(-5px -5px 4px rgb(51, 51, 51, 60%));
+
+	--z-index-burried: 	-1;
+	--z-index-zero: 		0;
+	--z-index-bottom: 	100;
+	--z-index-lowest: 	200;
+	--z-index-lower:		300;
+	--z-index-low:			400;
+	--z-index-standard:	500;
+	--z-index-high:			600;
+	--z-index-higher:		700;
+	--z-index-highest:	800;
+	--z-index-top: 			900;
+	--z-index-nines:		999;
+	--z-index-spaced: 	1000;
+}
+
+  
+/* ****************************************************************************
+ * 1 --- FONTS
+ * ****************************************************************************
+ * changes applied to the entire site - relating to fonts
+ * ----------------------------------------------------------------------------
+ * ----------------------------------------------------------------------------
+ * 1.1 FONT FACES
+ * ----------------------------------------------------------------------------
+ */
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('../assets/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf') format("truetype-variations");
+	src: url('../assets/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf');
+	font-weight: 1 999;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('../assets/fonts/Roboto_Mono/RobotoMono-Italic-VariableFont_wght.ttf') format("truetype-variations");
+	src: url('../assets/fonts/Roboto_Mono/static/RobotoMono-Italic.ttf') format("truetype");
+	font-weight: 1 999;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'DDC Hardware';
+	src: url('../assets/fonts/DDC_Hardware/DDCHardware-Regular.woff') format("woff");
+	font-weight: 1 999;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'DDC Hardware Condensed';
+	src: url('../assets/fonts/DDC_Hardware/DDCHardware-Condensed.woff') format("woff");
+	font-weight: 1 999;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'DDC Hardware Compressed';
+	src: url('../assets/fonts/DDC_Hardware/DDCHardware-Compressed.woff') format("woff");
+	font-weight: 1 999;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf') format("woff");
+	font-weight: 1 999;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../assets/fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf') format("woff");
+	font-weight: 1 999;
+	font-style: italic;
+}
+
+/* ----------------------------------------------------------------------------
+ * 1.2 FONT CUSTOMIZATIONS
+ * ----------------------------------------------------------------------------
+ */
+html {
+	font-size: 62.5%;
+}
+html body {
+	background: var(--white);
+	color: var(--black);
+}
+html body,
+html body p,
+.p {
+	font-family: var(--font-mono);
+	font-size: var(--font-size-p);
+	font-weight: var(--font-weight-p);
+	margin: var(--font-margin-p);
+	line-height: var(--line-height-p);
+}
+html body h1,
+.h1 {
+	/* titles */
+	font-family: var(--font-display);
+	font-size: var(--font-size-h1);
+	color: var(--color-primary);
+	font-weight: var(--font-weight-h1);
+	margin: var(--font-margin-h1);
+	line-height: var(--line-height-h1);
+}
+html body h2,
+.h2 {
+	/* top headings */
+	font-family: var(--font-display);
+	font-size: var(--font-size-h2);
+	color: var(--color-primary);
+	font-weight: var(--font-weight-h2);
+	margin: var(--font-margin-h2);
+	line-height: var(--line-height-h2);
+}
+html body h3,
+.h3 {
+	font-family: var(--font-mono);
+	font-size: var(--font-size-h3);
+	font-weight: var(--font-weight-h3);
+	margin: var(--font-margin-h3);
+	line-height: var(--line-height-h3);
+}
+html body h4,
+.h4 {
+	font-family: var(--font-mono);
+	font-size: var(--font-size-h4);
+	font-weight: var(--font-weight-h4);
+	margin: var(--font-margin-h4);
+	line-height: var(--line-height-h4);
+}
+html body h5,
+.h5 {
+	font-family: var(--font-mono);
+	font-size: var(--font-size-h5);
+	font-weight: var(--font-weight-h5);
+	margin: var(--font-margin-h5);
+	line-height: var(--line-height-h5);
+}
+html body h6,
+.h6 {
+	font-family: var(--font-mono);
+	font-size: var(--font-size-h6);
+	font-weight: var(--font-weight-h6);
+	margin: var(--font-margin-h6);
+	line-height: var(--line-height-h6);
+}
+
+/* ----------------------------------------------------------------------------
+ * 1.3 Wordpress Overrides
+ * ----------------------------------------------------------------------------
+ */
+@media screen and (max-width: 600px) {
+	#wpadminbar {
+		position: fixed;
+	}
+}
+/* ----------------------------------------------------------------------------
+ * 1.3 Body Positioning
+ * ----------------------------------------------------------------------------
+ */
+html body {
+	margin-top: calc(15.5rem + var(--spacing-standard)); /* header height + padding */
+	margin-inline: var(--spacing-standard);
+	margin-bottom: var(--spacing-standard);
+	position: relative;
+}
+@media only screen and ( max-width: 50em ) {
+	html body {
+		margin-top: calc(9rem + var(--spacing-standard)); /* header height + padding */
+	}
+}
+
+/* ----------------------------------------------------------------------------
+ * 1.4 Viewport Generalizations
+ * ----------------------------------------------------------------------------
+ */
+.desktop-view {
+    display: block;
+}
+.tablet-view {
+    display: none;
+}
+.mobile-view {
+	display: none;
+}
+
+@media only screen and ( max-width: 50em ) {
+	.desktop-view {
+		display: none !important;
+	}
+	.tablet-view {
+		display: block !important;
+	}
+}
+@media only screen and ( max-width: 30em ) {
+	.tablet-view {
+		display: none !important;
+	}
+	.mobile-view {
+		display: block !important;
+	}
+}
+.hidden {
+	visibility: hidden;
+}
+.visible {
+	visibility: visible;
+}
+.show {
+	display: block;
+}
+.hide {
+	display: none;
+}
