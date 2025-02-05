@@ -624,7 +624,21 @@ main.resume-template .content {
 main.resume-template .intro .content {
 	gap: 0;
 }
-main.resume-template .intro .content .gutenberg-content {
+main.resume-template .intro .wp-block-file {
+	text-align: center;
+	margin-block: 1rem 2rem;
+}
+main.resume-template .intro .wp-block-file__button {
+	border-radius: var(--radius-round);
+	background-color: var(--color-primary);
+	padding: 1rem 1.5rem;
+	color: var(--white);
+	text-decoration: none;
+}
+main.resume-template .intro .wp-block-file__button:hover {
+	background-color: var(--color-primary-hover);
+}
+main.resume-template .intro .content .body-content {
 	margin-top: 0;
 }
 main.resume-template .education .content {
