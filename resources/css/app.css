@@ -384,10 +384,10 @@ main.front-page {
 }
 
 /* ----------------------------------------------------------------------------
- * 1.3 Gutenberg Content
+ * 1.3 Body Content
  * ----------------------------------------------------------------------------
  */
-.gutenberg-content {
+.body-content {
 	margin-top: var(--spacing-standard);
 }
 
