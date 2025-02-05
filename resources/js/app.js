@@ -1,5 +1,7 @@
+import 'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
+import 'iconify-icon';
 
 /* Header JS */
 
@@ -30,6 +32,7 @@ function toggleMobileMenu(parent) {
 		
 	}
 }
+window.toggleMobileMenu = toggleMobileMenu;
 
 /* Front Page JS */
 
@@ -94,6 +97,7 @@ function gallerySlideArrows(parent) {
 	activeSlideDot.classList.remove('active');
 	newActiveSlideDot.classList.add('active');
 }
+window.gallerySlideArrows = gallerySlideArrows;
 
 /**
  * Dot Change Slide
@@ -119,6 +123,7 @@ function dotChangeSlide(parent) {
 	nextSlide.classList.add('active');
 	nextDot.classList.add('active');
 }
+window.dotChangeSlide = dotChangeSlide;
 
 /* Showcase Template JS */
 
@@ -134,6 +139,7 @@ function galleryGridShowModal(parent) {
 	
 	modalWrapper.classList.add('active');
 }
+window.galleryGridShowModal = galleryGridShowModal;
 
 /**
  * Gallery Grid Collapse Modal
@@ -150,6 +156,7 @@ function galleryGridCollapseModal(parent) {
 		modalWrapper.classList.remove('active');
 	}
 }
+window.galleryGridCollapseModal = galleryGridCollapseModal;
 
 setInterval(
 	function() {
@@ -161,12 +168,12 @@ setInterval(
 		
 		let newSlideID = null;
 		if ( activeSlideNumber === ( totalSlideCount - 1 ) )
-				// if the active slide number is equal to the total slide count, loop back to the first slide
+			// if the active slide number is equal to the total slide count, loop back to the first slide
 		{
 			newSlideID = 0;
 		}
 		else
-				// if not, advance to the next slide by increasing active slide number by one
+			// if not, advance to the next slide by increasing active slide number by one
 		{
 			newSlideID = activeSlideNumber + 1;
 		}
