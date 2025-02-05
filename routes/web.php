@@ -11,3 +11,9 @@ Route::get('/web', function () {
 Route::get('/resume', function () {
     return view('resume');
 });
+Route::get('/blog', function () {
+    return view('blog');
+});
+Route::get('/tech', function () {
+    return view('tech');
+});
