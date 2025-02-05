@@ -23,9 +23,13 @@
     </section>
     <hr>
     <section class="education">
+        {{ $education }}
+    </section>
+    <section class="skills">
+        {{ $skills }}
+    </section>
+    <section class="professional-exp">
         
     </section>
-    <section class="skills"></section>
-    <section class="professional-exp"></section>
     <section class="personal-exp"></section>
 </main>
