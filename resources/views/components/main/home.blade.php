@@ -35,38 +35,15 @@
         }
     }
 
-    $gallery_slides = [
-        [
-            'slide_title' => 'Web Wizard',
-            'slide_contents' => 'Taking lines of code and assembling them into web pages and applications has always fascinated Jason and continues to do so today. In his professional experience, Jason has crafted a number of web pages and web sites. In his personal life, Jason maintains several websites for personal and professional use.',
-            'cta_url' => '\/web',
-            'cta_button_text' => 'Learn More',
-            'slide_image' => assets('images/photos/imacs_row.jpg'),
-        ],
-        [
-            'slide_title' => 'Resume',
-            'slide_contents' => 'This doesn\'t really need explanation, does it?',
-            'cta_url' => '\/resume',
-            'cta_button_text' => 'View the Vita',
-            'slide_image' => assets('images/photos/audio_jacks.jpg'),
-        ]
-    ];
-
     $frontpage_builder = new frontPage;
 @endphp
 
 <main class="{{ $mainClass }}">
     <section class="sliding-gallery">
-        @php 
-        $slide_counter = 0;
-        @endphp
-        @foreach ($gallery_slides as $slide)
-            @php
-            $new_slide = $frontpage_builder->gallerySlide($slide, $slide_counter);
-            echo $new_slide;
-            $slide_counter++;
-            @endphp
+        @foreach ($slides as $index => $slide)
+            {!! $frontpage_builder->gallerySlide($slide, $index) !!}
         @endforeach
+    
         <div class="navigation">
             <div id="advance" class="arrow-right" onclick="gallerySlideArrows(this)">
                 <iconify-icon inline icon="fa-solid:chevron-right"></iconify-icon>
@@ -75,9 +52,9 @@
                 <iconify-icon inline icon="fa-solid:chevron-left"></iconify-icon>
             </div>
             <div class="dot-grid">
-                @for ($i = 0; $i < $slide_counter; $i++)
-                    <div id="dot-{{ $i }}" class="dot{{ $i == 0 ? ' active' : '' }}" onclick="dotChangeSlide(this)"></div>
-                @endfor
+                @foreach ($slides as $index => $slide)
+                    <div id="dot-{{ $index }}" class="dot{{ $index == 0 ? ' active' : '' }}" onclick="dotChangeSlide(this)"></div>
+                @endforeach
             </div>
         </div>
     </section>
