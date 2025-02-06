@@ -29,7 +29,9 @@
         {{ $skills }}
     </section>
     <section class="professional-exp">
-        
+       {{ $professionalExp }} 
     </section>
-    <section class="personal-exp"></section>
+    <section class="personal-exp">
+        {{ $personalExp }}
+    </section>
 </main>
