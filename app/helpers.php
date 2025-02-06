@@ -1,4 +1,7 @@
 <?php
-function isActivePage($route) {
-    return request()->is($route);
+if (!function_exists('isThePageActive')) {
+    function isThePageActive($path)
+    {
+        return request()->is(trim($path, '/')) ? 'active' : '';
+    }
 }
