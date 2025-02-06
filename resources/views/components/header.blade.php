@@ -1,4 +1,10 @@
 <header id="main-menu" class="topbar navbar">
+  <div class="form-check form-switch desktop">
+    <input class="form-check-input dark-mode-toggle" type="checkbox" id="dark-mode-toggle-desktop">
+    <label class="form-check-label" for="dark-mode-toggle-desktop">
+      <iconify-icon icon="material-symbols-light:dark-mode-outline" width="24" height="24"></iconify-icon>
+    </label>
+  </div>
   <section class="title">
     <a href="/">
       <div class="desktop-view">
@@ -28,6 +34,12 @@
 </header>
 
 <div id="mobile-menu" class="sidebar navbar">
+  <div class="form-check form-switch mobile">
+    <input class="form-check-input dark-mode-toggle" type="checkbox" id="dark-mode-toggle-mobile">
+    <label class="form-check-label" for="dark-mode-toggle-mobile">
+      <iconify-icon icon="material-symbols-light:dark-mode-outline" width="24" height="24"></iconify-icon>
+    </label>
+  </div>
   <div class="menu-toggle">
     <div class="close" onclick="toggleMobileMenu(this)"><iconify-icon inline icon="ic:round-close"></iconify-icon></div>
   </div>

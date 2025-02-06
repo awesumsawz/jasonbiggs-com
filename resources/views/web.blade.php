@@ -192,7 +192,7 @@
 	];
 @endphp
 
-<x-layout :galleryCards="$galleryCards">
+<x-layouts.default :galleryCards="$galleryCards">
 	<x-slot:title>
 		Web Wizard
 	</x-slot:title>
@@ -226,4 +226,4 @@
 			<div class="link"><a href="https://playbook.dealerinspire.com">Dealer Inspire Playbook</a></div>	
 		</div>
 	</x-slot:examples-column-two>
-</x-layout> 
+</x-layouts.default> 

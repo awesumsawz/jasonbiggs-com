@@ -1,37 +1,18 @@
-<main class="{{ $mainClass }}">
+<main class="resume-template">
     <section class="intro">
-        <div class="title">
-            <h1>{{$title}}</h1>
-            <p class="subtitle">{{$subtitle}}</p>
-        </div>
-        <div class="content">
-            <div class="body-content">
-                <div class="post page type-page status-publish hentry">
-                    <div class="post-content">
-                        <div class="entry">
-                            <div class="wp-block-file aligncenter">
-                                <a href="{{$downloadURL}}" class="wp-block-file__button wp-element-button" download="">
-                                    Download a copy
-                                </a>
-                            </div>
-                            {{$introBlurb}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <x-resume.intro />
     </section>
     <hr>
     <section class="education">
-        {{ $education }}
+        <x-resume.education />
     </section>
     <section class="skills">
-        {{ $skills }}
+        <x-resume.skills />
     </section>
     <section class="professional-exp">
-       {{ $professionalExp }} 
+        <x-resume.professional />
     </section>
     <section class="personal-exp">
-        {{ $personalExp }}
+        <x-resume.personal />
     </section>
 </main>

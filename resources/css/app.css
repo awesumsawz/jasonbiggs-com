@@ -210,6 +210,22 @@ header .menu.secondary a {
 	}
 }
 
+/* DARK MODE */
+#main-menu .form-check.desktop {
+	position: absolute;
+	top: 1rem;
+	right: 10rem;
+}
+@media only screen and (max-width: 50em) {
+	#main-menu .form-check.desktop {
+		display: none;
+	}
+}
+.form-check-input:checked {
+	background-color: var(--color-primary);
+	border-color: var(--color-primary-hover)
+}
+
 
 /* ----------------------------------------------------------------------------
  * 0.2 Footer
