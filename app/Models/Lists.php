@@ -3,11 +3,20 @@ namespace App\Models;
 
 class Lists
 {
-	public static function listBuilder(array $skills): string
+	public static function listBuilder(array $array): string
 	{
 		$build = '';
-		foreach ($skills as $skill) {
-			$build .= '<li>' . $skill . '</li>';
+		foreach ($array as $item) {
+			$build .= '<li>' . $item . '</li>';
+		}
+		return $build;
+	}
+
+	public static function h5ListBuilder(array $array): string 
+	{
+		$build = '';
+		foreach ($array as $item) {
+			$build .= '<h5>' . $item . '</h5>';
 		}
 		return $build;
 	}
@@ -34,7 +43,7 @@ class Lists
 		$build .= 	'<div class="experience">';
 		$build .= 		'<h3 class="position">' . $array['position'] . '</h3>';
 		$build .= 		'<div class="info">';
-		$build .= 			'<p class="range">' . $array['start_date'] . ' - ' . $array['end_date'] . '</p>';
+		$build .= 			'<p class="range">' . $array['start_date'] . ' - ' . ($array['end_date'] ? $array['end_date'] : 'Present') . '</p>';
 		$build .= 			'<p class="company">' . $array['company'] . '</p>';
 		$build .= 			'<p class="location">' . $array['location'] . '</p>';
 		$build .= 		'</div>';
