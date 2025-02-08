@@ -17,7 +17,7 @@ $slides = [
 ];
 @endphp
 
-<x-layouts.default :slides="$slides">
+<x-layouts.home :slides="$slides">
   <x-slot:main-class>
     front-page
   </x-slot:main-class>
@@ -29,4 +29,4 @@ $slides = [
       <p>His newly realized itch for development needed tending. Jason began pursuing a job that would allow him to grow as a developer and after initially applying for a Junior WordPress Developer position, he was grabbed by the Training team as a dual-role Trainer, Developer. However, upon learning of Jason's expertise on the backend and affinity for picking up new skills, the role was quickly adjusted, making Jason the Training team's Full-Stack Developer.</p>
     </div>
   </x-slot:content>
-</x-layouts.default>
+</x-layouts.home>
