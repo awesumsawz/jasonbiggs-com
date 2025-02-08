@@ -9,7 +9,26 @@ Route::get('/', function () {
     return view('home');
 });
 Route::get('/web', function () {
-    return view('web');
+    $intro = Pages::where([
+        'page_id' => '002',
+        'key' => 'intro_content'
+    ])->first();
+
+    $developmentExamples = Pages::where([
+        'page_id' => '002',
+        'key' => 'examples_development'
+    ])->first();
+    $productionSites = Pages::where([
+        'page_id' => '002',
+        'key' => 'examples_sites'
+    ])->first();
+
+    $galleryCards = Pages::where([
+        'page_id' => '002',
+        'key' => 'gallery_content'
+    ])->first();
+
+    return view('web', compact('intro', 'developmentExamples', 'productionSites', 'galleryCards'));
 });
 Route::get('/resume', function () {
     $professionalExperience = ProfessionalExperience::all();
