@@ -21,6 +21,15 @@ class Lists
 		return $build;
 	}
 
+	public static function linkListBuilder(array $array): string 
+	{
+		$build = '';
+		foreach ($array as $item) {
+			$build .= '<div class="link"><a href="' . $item['url'] . '">' . $item['label'] . '</a></div>';
+		}
+		return $build;
+	}
+
 	public static function educationBuilder(array $degree): string 
 	{
 		$build = '';
