@@ -1,1 +1,1 @@
-@extends('components.layouts.web')
+@extends('layouts.web')

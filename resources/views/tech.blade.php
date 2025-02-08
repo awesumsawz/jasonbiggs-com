@@ -1,1 +1,1 @@
-@extends('components.layouts.default')
+@extends('layouts.default')

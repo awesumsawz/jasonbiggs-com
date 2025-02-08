@@ -1,1 +1,1 @@
-@extends('components.layouts.resume') 
+@extends('layouts.resume') 
