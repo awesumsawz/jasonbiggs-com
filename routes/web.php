@@ -6,8 +6,19 @@ use App\Models\Pages;
 use App\Models\Resume\ProfessionalExperience;
 
 Route::get('/', function () {
-    return view('home');
+    $slideContent = Pages::where([
+        'page_id' => '003',
+        'key' => 'slider_content'
+    ])->first();
+
+    $textContent = Pages::where([
+        'page_id' => '003',
+        'key' => 'text_content'
+    ])->first();
+
+    return view('home', compact('slideContent', 'textContent'));
 });
+
 Route::get('/web', function () {
     $intro = Pages::where([
         'page_id' => '002',
@@ -30,6 +41,7 @@ Route::get('/web', function () {
 
     return view('web', compact('intro', 'developmentExamples', 'productionSites', 'galleryCards'));
 });
+
 Route::get('/resume', function () {
     $professionalExperience = ProfessionalExperience::all();
 
@@ -73,6 +85,15 @@ Route::get('/resume', function () {
 });
 // Route::get('/blog', function () {
 //     return view('blog');
+// });
+// Route::get('/contact', function () {
+//     return view('contact');
+// });
+// Route::get('/store', function () {
+//     return view('store');
+// });
+// Route::get('/about', function () {
+//     return view('about');
 // });
 // Route::get('/tech', function () {
 //     return view('tech');

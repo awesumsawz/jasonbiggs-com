@@ -3,14 +3,15 @@
 
 @php
 use App\Models\Gallery;
+
+$slides = json_decode($slideContent->value, true);
 @endphp
 
-<main class="{{ $mainClass }}">
+<main class="front-page">
     <section class="sliding-gallery">
         @foreach ($slides as $index => $slide)
             {!! Gallery::galleryBuilder($slide, $index) !!}
         @endforeach
-    
         <div class="navigation">
             <div id="advance" class="arrow-right" onclick="gallerySlideArrows(this)">
                 <iconify-icon inline icon="fa-solid:chevron-right"></iconify-icon>
@@ -25,9 +26,9 @@ use App\Models\Gallery;
             </div>
         </div>
     </section>
-    <div>
-        {{ $content }}
-    </div>
+    <section class="body-content">
+        {!! $textContent->value !!}
+    </section>
 </main>
 
 @include('components.footer')
