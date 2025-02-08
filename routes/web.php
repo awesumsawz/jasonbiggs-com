@@ -71,9 +71,14 @@ Route::get('/resume', function () {
 
     return view('resume', compact('intro', 'education', 'skillsLanguages', 'skillsSystems', 'skillsSoftware', 'personalHobbies', 'personalProjects', 'personalSpeaking', 'professionalExperience'));
 });
-Route::get('/blog', function () {
-    return view('blog');
-});
-Route::get('/tech', function () {
-    return view('tech');
-});
+// Route::get('/blog', function () {
+//     return view('blog');
+// });
+// Route::get('/tech', function () {
+//     return view('tech');
+// });
+
+// Catch-all route for 404 errors
+Route::get('/{any}', function () {
+    return view('404');
+})->where('any', '.*');
