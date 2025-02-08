@@ -194,10 +194,10 @@
 
 <x-layouts.web :galleryCards="$galleryCards">
 	<x-slot:title>
-		
+		Web Wizard
 	</x-slot:title>
 	<x-slot:main-class>
-		
+		showcase-template
 	</x-slot:main-class>
 	<x-slot:intro-blurb>
 		<p>Jason’s love for web development started while exploring HTML and CSS on Codecademy during his time as an educator. What began as a hobby—creating websites for friends and family—quickly turned into a passion for building meaningful digital experiences.</p>
