@@ -54,6 +54,14 @@
     color: #fff !important;
 }
 
+.dark-mode .nav .active a {
+    color: var(--color-primary) !important;
+}
+
+.dark-mode .nav .active a:hover {
+    color: var(--color-primary-light) !important;
+}
+
 .dark-mode main,
 .dark-mode body {
     background-color: #1e1e1e;
