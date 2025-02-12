@@ -1,0 +1,95 @@
+@use '../variables/variables.scss' as *;
+
+/* ----------------------------------------------------------------------------
+ * HEADER
+ * ----------------------------------------------------------------------------
+ */
+header.navbar {
+	font-family: $font-display;
+	filter: $shadow-layer0;
+	background-color: $white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto;
+	margin-inline: auto;
+	justify-content: center;
+	padding-inline: $spacing-standard;
+	width: 100%;
+	z-index: $z-index-nines;
+  @media #{$tablet-view} {
+    grid-template-columns: auto auto;
+		grid-template-rows: auto;
+		justify-content: space-between;
+  }
+  .title {
+    margin-inline: auto;
+    .logo {
+      max-height: 120px;
+      &:hover {
+        filter: drop-shadow(1px 1px 0px $black);
+      }
+      @media #{$tablet-view} {
+        max-height: 79px;
+        padding-block: 19px;
+      }
+      @media #{$mobile-view} {
+        max-height: 79px;
+        padding-block: 0;
+      }
+    }
+  }
+  .menu {
+    margin-inline: auto;
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: $spacing-standard;
+      list-style-type: none;
+      li {
+        a {
+          text-decoration: none;
+          color: $black;
+          &:hover {
+            color: $color-primary-hover;
+          }
+        }
+        .active {
+          a {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+    .tablet-view {
+      .mobile-view {
+        font-size: 4rem;
+        .open {
+          &:hover {
+            color: $color-primary-hover;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .secondary {
+      font-family: "DDC Hardware Condensed", sans-serif;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 1rem 2rem;
+      width: 100%;
+      ul {
+        justify-content: end;
+        width: 100%;
+        max-width: 80rem;
+        margin-inline: auto;
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+}
