@@ -1,0 +1,36 @@
+@use "../variables/variables.scss" as *;
+
+/* ----------------------------------------------------------------------------
+ * Body Positioning
+ * ----------------------------------------------------------------------------
+ */
+html body {
+    margin-top: calc(15.5rem + $spacing-standard);
+    /* header height + padding */
+    margin-inline: $spacing-standard;
+    margin-bottom: $spacing-standard;
+    position: relative;
+
+    @media #{$tablet-view} {
+        margin-top: calc(9rem + $spacing-standard);
+        /* header height + padding */
+    }
+}
+
+main {
+    max-width: 100rem;
+    margin-inline: auto;
+    margin-top: -1.4rem;
+
+    &.front-page {
+        margin-top: -0.1rem;
+    }
+
+    hr {
+        margin-block: 2.4rem 1.9rem;
+    }
+}
+
+.body-content {
+    margin-top: $spacing-standard;
+}

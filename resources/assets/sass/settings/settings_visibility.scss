@@ -1,0 +1,33 @@
+@use "../variables/variables.scss" as *;
+
+.desktop-view {
+  display: block;
+  @media #{$tablet-view} {
+    display: none;
+  }
+}
+.tablet-view {
+  display: none;
+  @media #{$tablet-view} {
+    display: block;
+  }
+}
+.mobile-view {
+  display: none;
+  @media #{$mobile-view} {
+    display: block;
+  }
+}
+
+.hidden {
+visibility: hidden;
+}
+.visible {
+visibility: visible;
+}
+.show {
+display: block;
+}
+.hide {
+display: none;
+}

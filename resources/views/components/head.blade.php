@@ -5,11 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Jason Biggs Developer</title>
 		@vite([
-			'resources/js/app.js', 
-			'resources/js/dark-mode.js',
-			'resources/css/app.css',
-			'resources/css/style.css',
-			'resources/css/dark-mode.css'
+			'resources/assets/js/app.js', 
+			'resources/assets/js/dark-mode.js',
+			'resources/assets/sass/app.scss'
 		])		
 	</head>
 	<body>
