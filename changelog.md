@@ -1,6 +1,10 @@
 # CHANGELOG
 _add new versions to the top of the changelog for readability_
 
+## 1.2 -- SASS and README
+- Added SASS for styling
+- Updated README
+
 ## 1.1.1 -- Added styling for active pages in the navbar
 - Also added a fix for the active tag on the homepage
 
