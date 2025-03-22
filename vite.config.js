@@ -6,9 +6,10 @@ export default defineConfig({
   plugins: [
     laravel({
       input: [
-        'resources/assets/js/app.js',
-        'resources/assets/js/dark-mode.js',
-        'resources/assets/sass/app.scss'
+        'resources/css/app.css',
+        'resources/js/app.js',
+        'resources/js/dark-mode.js',
+        'resources/js/showcase.js'
       ],
       refresh: true,
     }),

@@ -1,6 +1,11 @@
 # CHANGELOG
 _add new versions to the top of the changelog for readability_
 
+## 1.3 -- Blog Posts via Markdown
+- Added a blog posts page and child pages
+- Built out a system to house the blog posts via markdown
+- Added blog testing via pest
+
 ## 1.2 -- SASS and README
 - Added SASS for styling
 - Updated README

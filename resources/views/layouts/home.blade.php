@@ -26,7 +26,7 @@ $slides = json_decode($slideContent->value, true);
             </div>
         </div>
     </section>
-    <section class="body-content">
+    <section class="body-content container mx-auto px-4 mt-12">
         {!! $textContent->value !!}
     </section>
 </main>

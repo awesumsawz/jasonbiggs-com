@@ -41,14 +41,15 @@ class Gallery
         $output .=      '<div class="overlay" onclick="galleryGridShowModal(this)"></div>';
         $output .=    '</div>';
         $output .=    '<div class="grid-card-modal-wrapper">';
+        $output .=      '<div class="overlay" onclick="galleryGridCollapseModal(this)"></div>';
         $output .=    	'<div class="grid-card-modal">';
+        $output .=        '<div class="close" onclick="galleryGridCollapseModal(this)">';
+        $output .=          '<svg xmlns="http://www.w3.org/2000/svg" width="1216" height="1312" viewBox="0 0 1216 1312"><path fill="currentColor" d="M1202 1066q0 40-28 68l-136 136q-28 28-68 28t-68-28L608 976l-294 294q-28 28-68 28t-68-28L42 1134q-28-28-28-68t28-68l294-294L42 410q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294l294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68L880 704l294 294q28 28 28 68"/></svg>';
+        $output .=        '</div>';
         $output .=				'<div class="image">';
         $output .=					'<img src="'. $image_url .'" alt="'. $image_alt .'">';
-        $output .=      		'<div class="close" onclick="galleryGridCollapseModal(this)">';
-        $output .=        		'<iconify-icon icon="fa:close"></iconify-icon>';
-        $output .=      		'</div>';
         $output .=				'</div>';
-        $output .=      	'<div class="content">';
+        $output .=      	'<div class="content border-l border-dark-gray">';
         $output .=      		'<div class="title">';
         $output .=        		$title;
         $output .=      		'</div>';
@@ -60,7 +61,6 @@ class Gallery
         $output .=      		'</div>';
         $output .=      	'</div>';
         $output .=    	'</div>';
-        $output .=      '<div class="overlay" onclick="galleryGridCollapseModal(this)"></div>';
         $output .=  	'</div>';
         $output .=  '</article>';
         
