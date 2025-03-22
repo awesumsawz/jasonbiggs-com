@@ -53,7 +53,7 @@
     html {
         font-size: 62.5%;
     }
-    
+
     body {
         @apply bg-white text-dark-gray font-mono text-[1.6rem] font-normal leading-normal;
         margin-top: calc(15.5rem + 3rem); /* matching header height + spacing-standard */
@@ -61,65 +61,65 @@
         margin-bottom: 3rem; /* $spacing-standard */
         position: relative;
     }
-    
+
     /* Font weight utilities */
     .font-medium {
         font-weight: 500;
     }
-    
+
     .font-semibold {
         font-weight: 600;
     }
-    
+
     /* For tablet view - exact breakpoint from SASS */
     @media (max-width: 50em) {
         body {
             margin-top: calc(9rem + 3rem); /* Adjusted for smaller header on tablet */
         }
     }
-    
+
     main {
         @apply max-w-[100rem] mx-auto mb-12;
         margin-top: -1.4rem;
     }
-    
+
     main.front-page {
         margin-top: -0.1rem;
     }
-    
+
     main hr {
         margin-block: 2.4rem 1.9rem;
     }
-    
+
     .body-content {
         margin-top: 3rem; /* $spacing-standard */
     }
-    
+
     /* Typography reset to match SASS mixins */
     h1 {
         @apply font-display text-9xl text-primary font-normal leading-tight mb-4;
     }
-    
+
     h2 {
         @apply font-display text-8xl text-primary font-normal leading-tight mb-4;
     }
-    
+
     h3 {
         @apply font-mono text-7xl font-extrabold leading-tight m-0;
     }
-    
+
     h4 {
         @apply font-mono text-[2rem] font-extrabold leading-tight m-0;
     }
-    
+
     h5 {
         @apply font-mono text-[1.6rem] font-light leading-tight m-0;
     }
-    
+
     h6 {
         @apply font-mono text-4xl font-extrabold leading-tight m-0;
     }
-    
+
     a {
         @apply text-primary no-underline transition-colors;
     }
@@ -127,7 +127,7 @@
     a:hover {
         @apply text-primary-hover;
     }
-    
+
     p {
         @apply font-mono text-[1.6rem] font-normal leading-normal mb-4;
     }
@@ -140,162 +140,162 @@
         @apply font-display shadow-layer0 bg-white fixed top-0 left-0 grid grid-rows-[auto_auto] grid-cols-1 mx-auto justify-center px-12 w-full z-nines border-b border-light-gray;
         padding-bottom: 0.5rem;
     }
-    
+
     @media (max-width: 50em) {
         header.navbar {
             @apply grid-rows-[auto] grid-cols-[auto_auto] justify-between px-4;
         }
     }
-    
+
     header.navbar .title {
         @apply mx-auto flex items-center;
     }
-    
+
     header.navbar .title .logo {
         @apply max-h-[120px];
     }
-    
+
     header.navbar .title .logo:hover {
         @apply drop-shadow-[1px_1px_0px_rgba(51,51,51,1)];
     }
-    
+
     @media (max-width: 50em) {
         header.navbar .title .logo {
             @apply max-h-[70px] py-2;
         }
     }
-    
+
     @media (max-width: 30em) {
         header.navbar .title .logo {
             @apply max-h-[60px] py-1;
         }
     }
-    
+
     header.navbar .menu {
         @apply mx-auto my-auto;
     }
-    
+
     header.navbar .menu ul {
         @apply flex flex-row gap-12 list-none;
     }
-    
+
     header.navbar .menu ul li a {
         @apply no-underline text-dark-gray hover:text-primary-hover text-[1.6rem];
     }
-    
+
     header.navbar .menu ul li.active a {
         @apply text-primary;
     }
-    
+
     header.navbar .menu .tablet-view,
     header.navbar .menu .mobile-view {
         @apply flex justify-end items-center;
     }
-    
+
     header.navbar .menu .menu-trigger {
         @apply hidden justify-end items-center;
     }
-    
+
     @media (max-width: 50em) {
         header.navbar .menu .menu-trigger {
             @apply flex;
         }
     }
-    
+
     header.navbar .menu .menu-button {
         @apply bg-transparent border-0 p-2 cursor-pointer text-dark-gray dark:text-white hover:text-primary dark:hover:text-primary-light transition-colors duration-200;
         font-size: 2.4rem;
     }
-    
+
     header.navbar .menu .menu-button iconify-icon {
         @apply block;
     }
-    
+
     @media (max-width: 768px) {
         header.navbar .menu .menu-button {
             font-size: 2.8rem;
         }
     }
-    
+
     @media (max-width: 480px) {
         header.navbar .menu .menu-button {
             font-size: 3rem;
         }
     }
-    
+
     /* Secondary menu - commented out
     header.navbar .menu.secondary {
         @apply font-['DDC_Hardware_Condensed'] absolute top-0 right-0 p-[1rem_2rem] w-full z-10;
     }
-    
+
     header.navbar .menu.secondary ul {
         @apply justify-end w-full max-w-[80rem] mx-auto text-sm;
     }
-    
+
     header.navbar .menu.secondary ul a {
         @apply block capitalize;
     }
     */
-    
+
     /* Dark Mode Toggle Section */
     header.navbar .dark-mode-toggle {
         @apply absolute top-4 right-8 z-20;
     }
-    
+
     @media (max-width: 50em) {
         header.navbar .dark-mode-toggle {
             @apply hidden;
         }
     }
-    
+
     /* Dark Mode Toggle Styles - Matching dark-mode.scss */
     #main-menu .form-check.desktop {
         @apply absolute top-4 right-8 z-20 flex-row items-center;
     }
-    
+
     .form-check {
         @apply flex items-center gap-2;
     }
-    
+
     .form-check input[type="checkbox"] {
         @apply hidden;
     }
-    
+
     .form-check-label {
         @apply cursor-pointer relative inline-block h-6 w-12 bg-light-gray rounded-full transition-colors duration-200;
     }
-    
+
     .form-check-label::after {
         @apply content-[''] absolute h-5 w-5 left-0.5 top-0.5 bg-white rounded-full transition-transform duration-200;
     }
-    
+
     .form-check input[type="checkbox"]:checked + .form-check-label {
         @apply bg-primary;
     }
-    
+
     .form-check input[type="checkbox"]:checked + .form-check-label::after {
         @apply transform translate-x-6;
     }
-    
+
     .form-check .toggle-icons {
         @apply flex items-center gap-2;
     }
-    
+
     .form-check .toggle-icons svg {
         @apply w-4 h-4 text-dark-gray dark:text-light-gray;
     }
-    
+
     /* Mobile menu toggle - Matching mobile-menu.scss */
     .open, .close {
         @apply text-4xl hover:text-primary-hover hover:cursor-pointer;
     }
-    
+
     /* Mobile menu close button */
     .menu-button.close-button {
         @apply text-white hover:text-primary-light;
         font-size: 3rem;
     }
-    
+
     /* Mobile menu */
     #mobile-menu {
         position: fixed;
@@ -312,22 +312,22 @@
         display: flex;
         flex-direction: column;
     }
-    
+
     .dark #mobile-menu {
         background-color: #333333;
     }
-    
+
     #mobile-menu.is-active {
         transform: translateX(0);
     }
-    
+
     /* Mobile menu toggle */
     #mobile-menu .menu-toggle {
         display: flex;
         justify-content: flex-end;
         padding: 1rem;
     }
-    
+
     #mobile-menu .close-button {
         background: transparent;
         border: 0;
@@ -337,19 +337,19 @@
         font-size: 3rem;
         transition: color 0.2s;
     }
-    
+
     .dark #mobile-menu .close-button {
         color: white;
     }
-    
+
     #mobile-menu .close-button:hover {
         color: #00b880;
     }
-    
+
     .dark #mobile-menu .close-button:hover {
         color: #5fdbb5;
     }
-    
+
     /* Mobile menu content */
     #mobile-menu .mobile-nav-content {
         display: flex;
@@ -362,7 +362,7 @@
         height: 100%;
         overflow-y: auto;
     }
-    
+
     /* Mobile navigation */
     #mobile-menu .mobile-nav-content nav {
         display: flex;
@@ -372,11 +372,11 @@
         margin-bottom: 3rem;
         width: 100%;
     }
-    
+
     .dark #mobile-menu .mobile-nav-content nav a:hover {
         color: #5fdbb5;
     }
-    
+
     #mobile-menu .mobile-nav-content nav ul {
         display: flex;
         flex-direction: column;
@@ -386,12 +386,12 @@
         padding: 0;
         width: 100%;
     }
-    
+
     #mobile-menu .mobile-nav-content nav ul li {
         text-align: center;
         width: 100%;
     }
-    
+
     #mobile-menu .mobile-nav-content nav a {
         font-family: 'DDC Hardware', sans-serif;
         font-size: 2.4rem;
@@ -401,213 +401,213 @@
         display: block;
         width: 100%;
     }
-    
+
     .dark #mobile-menu .mobile-nav-content nav a {
         color: white;
     }
-    
+
     #mobile-menu .mobile-nav-content nav a:hover {
         color: #00b880;
     }
-    
+
     /* Dark mode toggle in mobile menu */
     #mobile-menu .form-check.mobile {
         margin-top: 2rem;
         display: flex;
         justify-content: center;
     }
-    
+
     /* Make sure body doesn't scroll when menu is open */
     body.menu-open {
         overflow: hidden;
     }
-    
+
     /* Blog-specific classes - Matching blog.scss exactly */
     .blog-page {
-        @apply pb-8;
+        @apply pb-8 pt-0;
     }
-    
+
     .posts {
         @apply space-y-8;
     }
-    
+
     @media (max-width: 768px) {
         .blog-post-page {
             @apply pt-4 pb-12;
         }
     }
-    
+
     /* Blog Card Styles - Updated for clickable cards */
     .blog-card {
         @apply bg-white dark:bg-dark-gray rounded-lg overflow-hidden flex flex-col h-full transition-all duration-300 border border-light-gray dark:border-gray mb-8 relative;
         box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     }
-    
+
     .blog-card:hover {
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         transform: translateY(-2px);
     }
-    
+
     .blog-card::before {
         content: '';
         @apply absolute top-0 left-0 right-0 h-1 bg-primary z-10;
     }
-    
+
     .blog-card .card-link-wrapper {
         @apply block text-current no-underline cursor-pointer;
         text-decoration: none;
     }
-    
+
     .blog-card .card-content {
         @apply p-6 flex flex-col h-full;
     }
-    
+
     .blog-card .card-meta {
         @apply text-[1.3rem] text-gray mb-2 flex flex-col gap-1 font-mono;
     }
-    
+
     .blog-card .card-meta .post-date {
         @apply flex items-center gap-2 dark:text-light-gray;
     }
-    
+
     .blog-card .card-meta .post-date:before {
         content: '';
         @apply block w-5 h-5 bg-contain bg-no-repeat bg-center;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2300B880' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");
     }
-    
+
     .blog-card .card-title {
         @apply font-display text-[2.2rem] mt-4 mb-4 leading-tight text-dark-gray dark:text-white;
     }
-    
+
     .blog-card:hover .card-title {
         @apply text-primary dark:text-primary-light;
     }
-    
+
     .blog-card .card-excerpt {
         @apply text-dark-gray dark:text-light-gray mb-4 font-mono text-[1.6rem] leading-relaxed flex-grow;
     }
-    
+
     .blog-card .card-link {
         @apply mt-0;
     }
-    
+
     .blog-card .read-more {
         @apply inline-flex items-center font-mono text-[1.4rem] text-primary dark:text-primary-light;
     }
-    
+
     .blog-card .read-more:after {
         content: "→";
         @apply ml-2 transition-transform duration-300;
     }
-    
+
     .blog-card:hover .read-more:after {
         @apply transform translate-x-1;
     }
-    
+
     /* Blog Post Content Styles - Updated to match design */
     .blog-post {
         @apply mx-auto mb-12;
     }
-    
+
     .blog-post .back-link {
         @apply mb-8;
     }
-    
+
     .blog-post .back-to-posts {
         @apply font-display inline-flex items-center gap-2 p-4 bg-white dark:bg-dark-gray text-dark-gray dark:text-white rounded-lg border border-light-gray dark:border-gray transition-all duration-200;
         box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     }
-    
+
     .blog-post .back-to-posts:hover {
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         transform: translateY(-2px);
         @apply text-primary dark:text-primary-light;
     }
-    
+
     .blog-post .back-to-posts .back-arrow {
         @apply text-2xl text-primary dark:text-primary-light flex items-center;
         line-height: 1;
         margin-top: -2px;
     }
-    
+
     .blog-post .back-to-posts .back-text {
         @apply font-display;
     }
-    
+
     .blog-post .post-header {
         @apply mb-10;
     }
-    
+
     .blog-post .post-title {
         @apply font-display text-6xl text-primary font-normal leading-tight mb-5;
         font-size: 5rem;
     }
-    
+
     .blog-post .post-meta {
-        @apply flex flex-wrap items-center font-mono text-gray text-[1.6rem] mb-10;
+        @apply flex flex-wrap items-center font-mono text-gray dark:text-light-gray text-[1.6rem] mb-10;
     }
-    
+
     .blog-post .post-meta .post-date {
-        @apply font-mono text-gray;
+        @apply font-mono;
     }
-    
+
     .blog-post .post-meta .reading-time {
-        @apply font-mono text-gray ml-1;
+        @apply font-mono ml-1;
     }
-    
+
     .blog-post .post-content {
         @apply font-mono text-[1.8rem] text-dark-gray dark:text-light-gray leading-relaxed;
     }
-    
+
     .blog-post .post-content p {
         @apply mb-6 font-mono text-[1.8rem] leading-relaxed;
     }
-    
+
     .blog-post .post-content h2 {
         @apply text-4xl font-display text-dark-gray dark:text-light-gray mt-12 mb-6;
     }
-    
+
     .blog-post .post-content h3 {
         @apply text-3xl font-display text-dark-gray dark:text-light-gray mt-10 mb-4;
     }
-    
-    .blog-post .post-content ul, 
+
+    .blog-post .post-content ul,
     .blog-post .post-content ol {
         @apply my-6 pl-8;
     }
-    
+
     .blog-post .post-content li {
         @apply mb-2;
     }
-    
+
     @media (max-width: 768px) {
         .blog-post {
             @apply pt-6;
         }
-        
+
         .blog-post .post-title {
-            @apply text-4xl;
+            @apply text-6xl;
         }
-        
+
         .blog-post .post-meta {
             @apply text-[1.4rem];
         }
-        
+
         .blog-post .post-content {
             @apply text-[1.6rem];
         }
     }
-    
+
     /* Blog Post Content Styles - Updated to match design */
     .blog-post .post-featured-image {
         @apply mb-8 rounded-lg overflow-hidden border border-light-gray dark:border-gray;
     }
-    
+
     .blog-post .post-featured-image img {
         @apply w-full h-auto object-cover max-h-[400px];
     }
-    
+
     .blog-post .post-content h1,
     .blog-post .post-content h2,
     .blog-post .post-content h3,
@@ -616,222 +616,222 @@
     .blog-post .post-content h6 {
         @apply font-display text-dark-gray dark:text-white my-6;
     }
-    
+
     .blog-post .post-content a {
         @apply text-primary dark:text-primary-light hover:text-primary-hover dark:hover:text-white underline;
     }
-    
+
     .blog-post .post-content blockquote {
         @apply border-l-4 border-primary dark:border-primary-light pl-4 my-6 italic;
     }
-    
+
     .blog-post .post-content img {
         @apply max-w-full h-auto rounded-lg my-6 mx-auto;
         display: block;
     }
-    
+
     .blog-post .post-content pre {
         @apply bg-light-gray dark:bg-gray p-4 rounded-lg overflow-x-auto my-6 max-w-full;
     }
-    
+
     .blog-post .post-content pre code {
         @apply text-dark-gray dark:text-light-gray;
         white-space: pre-wrap;
     }
-    
+
     .blog-post .post-content code {
         @apply font-mono text-[1.4rem] text-primary dark:text-primary-light;
     }
-    
+
     .blog-post .post-footer {
         @apply mt-12;
     }
-    
+
     .blog-post .post-navigation {
         @apply flex justify-between items-stretch gap-4;
     }
-    
+
     .blog-post .post-navigation a {
         @apply flex-1 p-6 flex flex-col bg-white dark:bg-dark-gray transition-all duration-200 rounded-lg border border-light-gray dark:border-gray;
         box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     }
-    
+
     .blog-post .post-navigation a:hover {
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         transform: translateY(-2px);
     }
-    
+
     .blog-post .post-navigation .previous-post {
         @apply items-start text-left;
     }
-    
+
     .blog-post .post-navigation .next-post {
         @apply items-end text-right;
     }
-    
+
     .blog-post .post-navigation .nav-header {
         @apply flex items-center gap-2 mb-2;
     }
-    
+
     .blog-post .post-navigation .previous-post .nav-header {
         @apply justify-start;
     }
-    
+
     .blog-post .post-navigation .next-post .nav-header {
         @apply justify-end;
     }
-    
+
     .blog-post .post-navigation .nav-arrow {
         @apply text-2xl font-mono text-primary dark:text-primary-light flex items-center;
         line-height: 1;
         margin-top: -2px;
     }
-    
+
     .blog-post .post-navigation .nav-label {
         @apply text-sm text-gray dark:text-light-gray font-display;
     }
-    
+
     .blog-post .post-navigation .nav-title {
         @apply font-display text-dark-gray dark:text-white hover:text-primary dark:hover:text-primary-light;
     }
-    
+
     .blog-post .post-navigation .nav-placeholder {
         @apply flex-1;
     }
-    
+
     /* Container styles */
     .container {
         @apply px-4 mx-auto;
     }
-    
+
     /* Match SASS exact breakpoint values */
     @screen sm {
         .container {
             max-width: 30em; /* 480px - $mobile-width */
         }
     }
-    
+
     @screen md {
         .container {
             max-width: 50em; /* 800px - $tablet-width */
         }
     }
-    
+
     @screen lg {
         .container {
             max-width: 64em; /* 1024px */
         }
     }
-    
+
     @screen xl {
         .container {
             max-width: 80em; /* 1280px */
         }
     }
-    
+
     /* Blog post content styles */
     .blog-content {
         @apply prose prose-lg max-w-none;
     }
-    
+
     /* Display utility classes - Matching SASS media queries exactly */
     .desktop-view {
         @apply hidden;
     }
-    
+
     .tablet-view {
         @apply hidden;
     }
-    
+
     .mobile-view {
         @apply hidden;
     }
-    
+
     .tablet-view-only {
         @apply hidden;
     }
-    
+
     .mobile-view-only {
         @apply hidden;
     }
-    
+
     @media (min-width: 50em) {
         .desktop-view {
             @apply block;
         }
     }
-    
+
     @media (max-width: 50em) and (min-width: 30em) {
         .tablet-view {
             @apply block;
         }
-        
+
         .tablet-view-only {
             @apply block;
         }
     }
-    
+
     @media (max-width: 30em) {
         .mobile-view {
             @apply block;
         }
-        
+
         .mobile-view-only {
             @apply block;
         }
     }
-    
+
     /* Tags styling */
     .tag {
         @apply inline-block px-3 py-1 bg-light-gray dark:bg-gray text-dark-gray dark:text-light-gray rounded-full text-[1.2rem] mr-2 font-mono;
     }
-    
+
     /* Home page gallery - Matching gallery.scss */
     .sliding-gallery {
         @apply relative;
     }
-    
+
     .sliding-gallery .slide {
         @apply p-[5rem_8rem] text-white relative hidden h-fit min-h-[40rem] bg-center bg-cover bg-no-repeat;
     }
-    
+
     @media (max-width: 30em) {
         .sliding-gallery .slide {
             @apply p-[5rem_5rem_8rem];
         }
     }
-    
+
     .sliding-gallery .slide.active {
         @apply grid justify-center content-center;
     }
-    
+
     .sliding-gallery .title,
     .sliding-gallery .content,
     .sliding-gallery .cta {
         @apply relative z-standard;
     }
-    
+
     .sliding-gallery .title,
     .sliding-gallery .cta {
         @apply text-center;
     }
-    
+
     .sliding-gallery .title h2 {
         @apply text-8xl;
     }
-    
+
     .sliding-gallery .cta a {
         @apply block py-4 px-8 w-fit mx-auto bg-primary text-white no-underline font-display;
     }
-    
+
     .sliding-gallery .cta a:hover {
         @apply text-white bg-primary-hover;
     }
-    
+
     .sliding-gallery .overlay {
         @apply absolute top-0 left-0 h-full w-full bg-[rgba(0,0,0,0.7)] z-bottom backdrop-blur-md;
     }
-    
+
     .sliding-gallery .navigation {
         @apply absolute top-0 left-0 h-full w-full grid text-white text-9xl;
         grid-template-columns: 8rem auto 8rem;
@@ -841,7 +841,7 @@
             "arrow-left . arrow-right"
             ". dots .";
     }
-    
+
     @media (max-width: 30em) {
         .sliding-gallery .navigation {
             grid-template-columns: 5rem auto 5rem;
@@ -852,42 +852,42 @@
                 "arrow-left dots arrow-right";
         }
     }
-    
+
     .sliding-gallery .navigation .arrow-right,
     .sliding-gallery .navigation .arrow-left {
         @apply justify-self-center self-center z-standard;
     }
-    
+
     .sliding-gallery .navigation .arrow-right:hover,
     .sliding-gallery .navigation .arrow-left:hover {
         @apply text-primary cursor-pointer;
     }
-    
+
     .sliding-gallery .navigation .arrow-right {
         grid-area: arrow-right;
     }
-    
+
     .sliding-gallery .navigation .arrow-left {
         grid-area: arrow-left;
     }
-    
+
     .sliding-gallery .navigation .dot-grid {
         grid-area: dots;
         @apply justify-self-center self-center z-standard flex flex-row gap-4;
     }
-    
+
     .sliding-gallery .navigation .dot-grid .dot {
         @apply h-8 w-8 bg-white rounded-standard cursor-pointer;
     }
-    
+
     .sliding-gallery .navigation .dot-grid .dot:hover {
         @apply bg-primary-hover;
     }
-    
+
     .sliding-gallery .navigation .dot-grid .dot.active {
         @apply bg-primary;
     }
-    
+
     /* Footer styles - Matching footer.scss */
     footer {
         @apply grid mt-12;
@@ -895,33 +895,33 @@
         grid-template-rows: auto;
         grid-template-areas: "attribution last-updated";
     }
-    
+
     footer .attribution {
         grid-area: attribution;
     }
-    
+
     footer .last-updated {
         grid-area: last-updated;
     }
-    
+
     /* Body content styles for home page */
     .body-content {
         @apply font-mono text-[1.6rem] leading-normal w-full mx-auto;
     }
-    
-    .body-content h1, 
-    .body-content h2, 
-    .body-content h3, 
-    .body-content h4, 
-    .body-content h5, 
+
+    .body-content h1,
+    .body-content h2,
+    .body-content h3,
+    .body-content h4,
+    .body-content h5,
     .body-content h6 {
         @apply mt-8 mb-4;
     }
-    
+
     .body-content p {
         @apply mb-4;
     }
-    
+
     .body-content a {
         @apply text-primary hover:text-primary-hover;
     }
@@ -1110,7 +1110,7 @@ script#theme-check {
 
 .showcase-template .grid-card-modal .content .date {
     @apply italic text-gray dark:text-light-gray text-[1.4rem];
-} 
+}
 
 .resume {
     @apply mb-12;
@@ -1174,7 +1174,7 @@ script#theme-check {
     .blog-grid {
         @apply grid-cols-1 max-w-xl mx-auto;
     }
-    
+
     .blog-card .card-title {
         @apply text-[2rem];
     }
@@ -1184,32 +1184,32 @@ script#theme-check {
     .blog-header h1 {
         @apply text-7xl;
     }
-    
+
     .blog-card .card-content {
         @apply p-5;
     }
-    
+
     .blog-pagination .pagination {
         @apply gap-1 flex-wrap justify-center;
     }
-    
+
     .blog-pagination .page-link {
         @apply px-3 py-2 text-[1.2rem];
         min-width: 36px;
     }
-    
+
     .blog-controls {
         @apply justify-center;
     }
-    
+
     .per-page-selector {
         @apply text-center;
     }
-    
+
     .per-page-selector label {
         @apply text-[1.3rem];
     }
-    
+
     .per-page-selector select {
         @apply text-[1.3rem] px-2 py-1;
     }
@@ -1309,7 +1309,7 @@ script#theme-check {
     .tag-filter, .per-page-selector {
         @apply w-full;
     }
-    
+
     .tag-filter select, .per-page-selector select {
         @apply flex-grow;
     }
@@ -1319,15 +1319,15 @@ script#theme-check {
     .blog-controls {
         @apply justify-center items-center;
     }
-    
+
     .tag-filter, .per-page-selector {
         @apply text-center;
     }
-    
+
     .tag-filter label, .per-page-selector label {
         @apply text-[1.3rem];
     }
-    
+
     .tag-filter select, .per-page-selector select {
         @apply text-[1.3rem] px-2 py-1;
     }
