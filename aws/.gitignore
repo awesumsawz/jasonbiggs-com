@@ -1,0 +1,3 @@
+scripts/config.sh
+scripts/run-migration.sh
+documentation/task-definition-template.json
