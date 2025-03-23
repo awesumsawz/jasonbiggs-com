@@ -1,6 +1,10 @@
 # CHANGELOG
 _add new versions to the top of the changelog for readability_
 
+## 2.0 -- Added Blog in its entirety
+- Add the blog posts via markdown
+- Added fully styled blog pages (index and post pages)
+
 ## 1.3 -- Blog Posts via Markdown
 - Added a blog posts page and child pages
 - Built out a system to house the blog posts via markdown
