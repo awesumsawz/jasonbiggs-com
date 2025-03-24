@@ -1054,7 +1054,7 @@ script#theme-check {
 }
 
 .showcase-template .grid-card-modal .close {
-  @apply absolute top-4 right-4 z-50 text-white rounded-full h-10 w-10 flex items-center justify-center cursor-pointer hover:text-primary transition-colors;
+  @apply absolute top-4 right-4 z-50 text-primary dark:text-white rounded-full h-10 w-10 flex items-center justify-center cursor-pointer hover:text-primary-hover hover:dark:text-primary transition-colors;
 }
 
 .showcase-template .grid-card-modal .close iconify-icon {
