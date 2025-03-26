@@ -5,45 +5,45 @@
 /* Font faces - Exact matching of SASS font imports */
 @font-face {
   font-family: 'DDC Hardware';
-  src: url('../assets/fonts/DDC_Hardware/DDCHardware-Regular.woff') format("woff");
+  src: url('/assets/fonts/DDC_Hardware/DDCHardware-Regular.woff') format("woff");
   font-weight: 1 999;
   font-style: normal;
 }
 @font-face {
   font-family: 'DDC Hardware Condensed';
-  src: url('../assets/fonts/DDC_Hardware/DDCHardware-Condensed.woff') format("woff");
+  src: url('/assets/fonts/DDC_Hardware/DDCHardware-Condensed.woff') format("woff");
   font-weight: 1 999;
   font-style: normal;
 }
 @font-face {
   font-family: 'DDC Hardware Compressed';
-  src: url('../assets/fonts/DDC_Hardware/DDCHardware-Compressed.woff') format("woff");
+  src: url('/assets/fonts/DDC_Hardware/DDCHardware-Compressed.woff') format("woff");
   font-weight: 1 999;
   font-style: normal;
 }
 @font-face {
   font-family: 'Roboto Mono';
-  src: url('../assets/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf') format("truetype-variations");
-  src: url('../assets/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf');
+  src: url('/assets/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf') format("truetype-variations");
+  src: url('/assets/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf');
   font-weight: 1 999;
   font-style: normal;
 }
 @font-face {
   font-family: 'Roboto Mono';
-  src: url('../assets/fonts/Roboto_Mono/RobotoMono-Italic-VariableFont_wght.ttf') format("truetype-variations");
-  src: url('../assets/fonts/Roboto_Mono/static/RobotoMono-Italic.ttf') format("truetype");
+  src: url('/assets/fonts/Roboto_Mono/RobotoMono-Italic-VariableFont_wght.ttf') format("truetype-variations");
+  src: url('/assets/fonts/Roboto_Mono/static/RobotoMono-Italic.ttf') format("truetype");
   font-weight: 1 999;
   font-style: italic;
 }
 @font-face {
   font-family: 'Open Sans';
-  src: url('../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf') format("woff");
+  src: url('/assets/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf') format("woff");
   font-weight: 1 999;
   font-style: normal;
 }
 @font-face {
   font-family: 'Open Sans';
-  src: url('../assets/fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth,wght.ttf') format("woff");
+  src: url('/assets/fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth,wght.ttf') format("woff");
   font-weight: 1 999;
   font-style: italic;
 }

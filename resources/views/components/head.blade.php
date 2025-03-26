@@ -59,12 +59,12 @@
         <meta name="description" content="{{ $description ?? 'Jason Biggs Portfolio' }}">
 
 		@vite([
+			'resources/css/app.css',
 			'resources/js/app.js',
-			'resources/js/dark-mode.js',
-			'resources/css/app.css'
+			'resources/js/dark-mode.js'
 		])
 
         <!-- Iconify for UI icons -->
-        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+        <script src="{{ app()->environment('production') ? 'https' : 'http' }}://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 	</head>
 	<body class="min-h-screen">

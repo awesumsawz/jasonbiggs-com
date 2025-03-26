@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Set initial state
         applyDarkMode(isDarkMode);
         
-        // Add event listeners to toggle switches
+        // Add event listeners to toggle switches - Only if they exist
         if (darkModeToggle) {
             darkModeToggle.addEventListener('change', function() {
                 console.log('Desktop toggle changed:', this.checked);
