@@ -84,9 +84,6 @@
         const cardElement = button.closest('.blog-card');
         const isExpanded = button.getAttribute('data-expanded') === 'true';
         
-        console.log(`Toggling tags for post ${postId}. Current state: ${isExpanded ? 'expanded' : 'collapsed'}`);
-        console.log(`Found ${hiddenTags.length} hidden tags to toggle`);
-        
         if (isExpanded) {
             // Hide tags - we're collapsing
             hiddenTags.forEach(tag => {
