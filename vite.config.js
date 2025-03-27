@@ -33,7 +33,14 @@ export default defineConfig(({ command, mode }) => {
         output: {
           manualChunks: {
             vendor: ['alpinejs']
-          }
+          },
+          assetFileNames: (assetInfo) => {
+            // Keep fonts in a dedicated directory
+            if (assetInfo.name.endsWith('.ttf') || assetInfo.name.endsWith('.woff') || assetInfo.name.endsWith('.woff2')) {
+              return 'assets/fonts/[name][extname]';
+            }
+            return 'assets/[name]-[hash][extname]';
+          },
         }
       }
     },
