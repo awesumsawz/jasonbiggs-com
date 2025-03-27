@@ -26,7 +26,7 @@ $speaking = json_decode($personalSpeaking->value, true);
                     <div class="post-content">
                         <div class="entry">
                             <div class="text-center my-6">
-                                <a href="{{ asset('files/12-05-24_JasonBiggs_Resume__WebDeveloper.pdf') }}" class="bg-dark-gray !text-white text-[1.4rem] px-6 py-2 rounded-full hover:bg-primary-hover transition-colors duration-300 dark:bg-true-black dark:hover:bg-primary-hover" download="">
+                                <a href="{{ asset('files/jasonbiggs_cv.pdf')}}" class="bg-dark-gray !text-white text-[1.4rem] px-6 py-2 rounded-full hover:bg-primary-hover transition-colors duration-300 dark:bg-true-black dark:hover:bg-primary-hover" download="">
                                     Download a copy
                                 </a>
                             </div>
@@ -126,7 +126,7 @@ $speaking = json_decode($personalSpeaking->value, true);
                         <p class="leading-relaxed text-gray-800 dark:text-gray-200">
                             {!! $projects['think_bigg_consulting'] !!}
                         </p>
-                    </div> 
+                    </div>
                 </div>
             </div>
             <div>
