@@ -44,7 +44,7 @@ Route::get('/web', function () {
 });
 
 Route::get('/resume', function () {
-    $professionalExperience = ProfessionalExperience::all();
+    $professionalExperience = ProfessionalExperience::orderBy('display_order')->get();
 
     $intro = Pages::where([
         'page_id' => '001',
