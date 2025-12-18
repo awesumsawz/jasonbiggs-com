@@ -23,7 +23,7 @@ Route::get('/web', function () {
 });
 
 Route::get('/resume', function () {
-    $professionalExperience = ProfessionalExperience::orderBy('display_order');
+    $professionalExperience = ProfessionalExperience::all()->sortBy('display_order');
 
     $intro = Pages::getBySlugAndKey('resume', 'intro_content');
     $education = Pages::getBySlugAndKey('resume', 'education_degree');
