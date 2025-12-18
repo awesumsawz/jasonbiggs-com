@@ -34,13 +34,13 @@
   <section class="title">
     <a href="/">
       <div class="desktop-view">
-        <img class="logo" src="{{ asset('images/logos/green-logowordmark-flat.png') }}" alt="combined logo" />
+        <img class="logo" src="{{ asset('images/logos/green-logowordmark-flat.webp') }}" alt="combined logo" />
       </div>
       <div class="tablet-view">
-        <img class="logo" src="{{ asset('images/logos/green-logowordmark-flat.png') }}" alt="graphic logo" />
+        <img class="logo" src="{{ asset('images/logos/green-logowordmark-flat.webp') }}" alt="graphic logo" />
       </div>
       <div class="mobile-view">
-        <img class="logo" src="{{ asset('images/logos/green-logo.png') }}" alt="graphic logo" />
+        <img class="logo" src="{{ asset('images/logos/green-logo.webp') }}" alt="graphic logo" />
       </div>
     </a>
   </section>
@@ -68,7 +68,7 @@
   <div style="display: flex; flex-direction: column; align-items: center; flex-grow: 1; padding: 2rem; overflow-y: auto;">
     <div style="margin-bottom: 3rem;">
       <a href="/">
-        <img src="{{ asset('images/logos/green-logowordmark-stacked.png') }}" alt="Logo" style="max-height: 8rem;" />
+        <img src="{{ asset('images/logos/green-logowordmark-stacked.webp') }}" alt="Logo" style="max-height: 8rem;" />
       </a>
     </div>
     
