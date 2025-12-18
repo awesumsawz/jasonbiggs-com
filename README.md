@@ -1,27 +1,26 @@
 # jason-biggs.com
 
 ## Overview
-This is a personal website for Jason Biggs built with Laravel 11, using modern web development practices. The site features a blog system using markdown files, a responsive design with dark mode support, and React for interactive components.
+This is a personal website for Jason Biggs built with Laravel 11, using modern web development practices. The application runs **without a database**, using static JSON files for content and markdown files for blog posts. This makes deployment simple and fast.
 
 ## Technologies Used
 - **Laravel 11** - PHP framework
 - **React** - For dynamic, interactive components
 - **Tailwind CSS** - For styling with custom configuration
-- **PostgreSQL** - Database
 - **Vite** - Frontend build tool
 - **Pest** - PHP testing framework
 
 ## Features
-- Markdown-based blog system with front matter support
+- **Database-free architecture** - Uses JSON files for data storage (`data/` directory)
+- **Markdown-based blog system** with YAML front matter support (`content/blog/` directory)
 - Dark mode toggle
 - Responsive design for mobile, tablet and desktop views
 - Custom font integration (DDC Hardware, Roboto Mono, Open Sans)
 
 ## Requirements
 - PHP 8.2+
-- Node.js (version specified in .nvmrc)
+- Node.js 20+ (version specified in .nvmrc)
 - Composer
-- PostgreSQL
 
 ## Installation
 
@@ -47,12 +46,7 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-5. Configure your PostgreSQL database in the `.env` file
-
-6. Run migrations
-```bash
-php artisan migrate
-```
+**Note:** No database setup required! The application uses file-based sessions, cache, and static JSON files for content.
 
 ## Development
 
@@ -109,7 +103,88 @@ npm run build
 - `routes/` - Contains route definitions
 - `public/` - Publicly accessible files
 - `content/blog/` - Markdown files for blog posts
+- `data/` - JSON files for page content and data (replaces database)
+  - `pages.json` - Page content (home, web, resume)
+  - `professional-experiences.json` - Resume professional experience
 - `tests/` - Pest tests for the application
+
+## Deployment
+
+This application can be deployed to various platforms without requiring a database:
+
+### Digital Ocean App Platform (Recommended)
+Simple, managed deployment with automatic builds from Git.
+
+**Build Command:**
+```bash
+composer install --no-dev --optimize-autoloader && npm install && npm run build
+```
+
+**Run Command:**
+```bash
+php artisan optimize && php artisan serve --host=0.0.0.0 --port=8080
+```
+
+**Environment Variables:**
+- `APP_ENV=production`
+- `APP_DEBUG=false`
+- `APP_KEY` (generate with `php artisan key:generate --show`)
+- `SESSION_DRIVER=file`
+- `CACHE_STORE=file`
+- `QUEUE_CONNECTION=sync`
+
+### Traditional VPS
+Deploy to any VPS with PHP 8.2+, Nginx/Apache, and Node.js. No database required!
+
+**Basic Nginx Configuration:**
+```nginx
+server {
+    listen 80;
+    server_name yourdomain.com;
+    root /var/www/jason-biggs-com/public;
+
+    add_header X-Frame-Options "SAMEORIGIN";
+    add_header X-Content-Type-Options "nosniff";
+
+    index index.php;
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location ~ \.php$ {
+        fastcgi_pass unix:/var/run/php/php8.2-fpm.sock;
+        fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    location ~ /\.(?!well-known).* {
+        deny all;
+    }
+}
+```
+
+### Shared Hosting
+Compatible with shared hosting that supports PHP 8.2+ and allows setting document root to `public/`.
+
+## Content Management
+
+### Updating Page Content
+Edit JSON files in the `data/` directory and commit changes to Git.
+
+### Adding Blog Posts
+Create markdown files in `content/blog/` with YAML front matter:
+
+```markdown
+---
+title: Post Title
+date: YYYY-MM-DD
+excerpt: A short description
+tags: [tag1, tag2]
+---
+
+# Your content here
+```
 
 ## License
 MIT

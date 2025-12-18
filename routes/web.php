@@ -7,80 +7,32 @@ use App\Models\Resume\ProfessionalExperience;
 use App\Models\BlogPost;
 
 Route::get('/', function () {
-    $slideContent = Pages::where([
-        'page_id' => '003',
-        'key' => 'slider_content'
-    ])->first();
-
-    $textContent = Pages::where([
-        'page_id' => '003',
-        'key' => 'text_content'
-    ])->first();
+    $slideContent = Pages::getBySlugAndKey('home', 'slider_content');
+    $textContent = Pages::getBySlugAndKey('home', 'text_content');
 
     return view('home', compact('slideContent', 'textContent'));
 });
 
 Route::get('/web', function () {
-    $intro = Pages::where([
-        'page_id' => '002',
-        'key' => 'intro_content'
-    ])->first();
-
-    $developmentExamples = Pages::where([
-        'page_id' => '002',
-        'key' => 'examples_development'
-    ])->first();
-    $productionSites = Pages::where([
-        'page_id' => '002',
-        'key' => 'examples_sites'
-    ])->first();
-
-    $galleryCards = Pages::where([
-        'page_id' => '002',
-        'key' => 'gallery_content'
-    ])->first();
+    $intro = Pages::getBySlugAndKey('web', 'intro_content');
+    $developmentExamples = Pages::getBySlugAndKey('web', 'examples_development');
+    $productionSites = Pages::getBySlugAndKey('web', 'examples_sites');
+    $galleryCards = Pages::getBySlugAndKey('web', 'gallery_content');
 
     return view('web', compact('intro', 'developmentExamples', 'productionSites', 'galleryCards'));
 });
 
 Route::get('/resume', function () {
-    $professionalExperience = ProfessionalExperience::all();
+    $professionalExperience = ProfessionalExperience::orderBy('display_order');
 
-    $intro = Pages::where([
-        'page_id' => '001',
-        'key' => 'intro_content'
-    ])->first();
-
-    $education = Pages::where([
-        'page_id' => '001',
-        'key' => 'education_degree'
-    ])->first();
-    
-    $skillsLanguages = Pages::where([
-        'page_id' => '001',
-        'key' => 'skills_languages'
-    ])->first();
-    $skillsSystems = Pages::where([
-        'page_id' => '001',
-        'key' => 'skills_systems'
-    ])->first();
-    $skillsSoftware = Pages::where([
-        'page_id' => '001',
-        'key' => 'skills_software'
-    ])->first();
-
-    $personalHobbies = Pages::where([
-        'page_id' => '001',
-        'key' => 'personal_hobbies'
-    ])->first();
-    $personalProjects = Pages::where([
-        'page_id' => '001',
-        'key' => 'personal_projects'
-    ])->first();
-    $personalSpeaking = Pages::where([
-        'page_id' => '001',
-        'key' => 'personal_speaking'
-    ])->first();
+    $intro = Pages::getBySlugAndKey('resume', 'intro_content');
+    $education = Pages::getBySlugAndKey('resume', 'education_degree');
+    $skillsLanguages = Pages::getBySlugAndKey('resume', 'skills_languages');
+    $skillsSystems = Pages::getBySlugAndKey('resume', 'skills_systems');
+    $skillsSoftware = Pages::getBySlugAndKey('resume', 'skills_software');
+    $personalHobbies = Pages::getBySlugAndKey('resume', 'personal_hobbies');
+    $personalProjects = Pages::getBySlugAndKey('resume', 'personal_projects');
+    $personalSpeaking = Pages::getBySlugAndKey('resume', 'personal_speaking');
 
     return view('resume', compact('intro', 'education', 'skillsLanguages', 'skillsSystems', 'skillsSoftware', 'personalHobbies', 'personalProjects', 'personalSpeaking', 'professionalExperience'));
 });
