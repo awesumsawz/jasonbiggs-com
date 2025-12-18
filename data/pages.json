@@ -1,0 +1,128 @@
+[
+    {
+        "id": 17,
+        "page_id": 1,
+        "slug": "resume",
+        "key": "education_degree",
+        "value": "[ { \"degree\": \"Master of Science\", \"field\": \"Education in Literacy\", \"date\": \"June 2016\", \"university\": \"Judson University\", \"location\": \"Elgin, Illinois\" }, { \"degree\": \"Bachelor of Science\", \"field\": \"Elementary Education\", \"date\": \"May 2013\", \"university\": \"Northern Illinois University\", \"location\": \"DeKalb, Illinois\" } ]",
+        "created_at": "2025-02-09T06:36:53.000000Z",
+        "updated_at": "2025-02-09T06:36:53.000000Z"
+    },
+    {
+        "id": 19,
+        "page_id": 1,
+        "slug": "resume",
+        "key": "intro_content",
+        "value": "<p>Jason\u2019s journey into technology and development started after leaving a career in education, where he honed his skills in communication and problem-solving. At Judson University, he dove into system administration and customer support, while also putting his knack for web and graphic design to good use.<\/p> <p>From there, he joined The Mx Group, blending customer-facing work with scripting and automation, creating tools with PowerShell, Bash, and Python that streamlined workflows and boosted productivity. This sparked his passion for development, leading him to Dealer Inspire, where he quickly transitioned from Trainer to Full-Stack Developer. Over the years, he built and maintained websites, extended plugins, and created tools that made a real impact. After exiting DI amid a restructuring in early 2024, Jason took the opportunity to learn React, Next.js, and TypeScript, expanding his front-end expertise.<\/p> <p>Now, as a Senior Software Engineer at Chime Financial, Jason helps drive revenue and user engagement by building dynamic pages, troubleshooting WordPress, and creating tools with PHP, JavaScript, and Advanced Custom Fields. His cross-departmental documentation efforts ensure workflows are smooth and knowledge is shared effectively across teams.<\/p> <p>Outside of work, Jason loves spending time with his daughter Eleanor, exploring new hobbies (hello, coffee brewing and photography), and tinkering with his home network and gaming computer. He\u2019s a tech enthusiast, podcast aficionado (Accidental Tech Podcast, Connected, The Vergecast), and an actual-play podcast superfan (The Adventure Zone, Dungeons & Daddies, Dimension 20).<\/p>",
+        "created_at": "2025-02-09T06:42:29.000000Z",
+        "updated_at": "2025-02-09T06:42:29.000000Z"
+    },
+    {
+        "id": 20,
+        "page_id": 1,
+        "slug": "resume",
+        "key": "personal_hobbies",
+        "value": "[ \"Home Automation\", \"Photography\", \"Graphic Design\", \"Home Labbing\", \"Productivity\", \"Consumer Technology\", \"Computer Building\", \"Gaming\", \"Mechanical Keyboards\", \"Home Networking\", \"Reading\", \"Everyday Carry\", \"Guitar & Bass\", \"Cable Management\", \"Coffee\" ]",
+        "created_at": "2025-02-09T06:43:31.000000Z",
+        "updated_at": "2025-02-09T06:43:31.000000Z"
+    },
+    {
+        "id": 21,
+        "page_id": 1,
+        "slug": "resume",
+        "key": "personal_projects",
+        "value": "{ \"think_bigg_development\": \"Through Think Bigg Development, I build and maintain websites for small businesses owned by current and former educators. This initiative is dedicated to empowering educational entrepreneurs with tailored digital solutions.\", \"techregular\": \"Jason's technology blog breaks down complex tech topics into everyday language. Recently rebuilt using NextJS, TechRegular is gearing up for a comeback with fresh content and enhanced performance.\", \"think_bigg_consulting\": \"Think Bigg Consulting is Jason's consulting venture that once specialized in crafting websites, branding, and offering IT advice for individuals and small businesses. While it laid the groundwork for his digital expertise, this project remains dormant.\" }",
+        "created_at": "2025-02-09T06:46:54.000000Z",
+        "updated_at": "2025-02-09T06:46:54.000000Z"
+    },
+    {
+        "id": 22,
+        "page_id": 1,
+        "slug": "resume",
+        "key": "personal_speaking",
+        "value": "{ \"2014\": [\"Illinois Reading Conference\"], \"2015\": [\"Illinois Reading Conference\"], \"2016\": [\"Illinois Reading Conference\", \"Literacy In Motion\", \"Starved Rock Reading Council\"] }",
+        "created_at": "2025-02-09T06:47:50.000000Z",
+        "updated_at": "2025-02-09T06:47:50.000000Z"
+    },
+    {
+        "id": 23,
+        "page_id": 1,
+        "slug": "resume",
+        "key": "skills_languages",
+        "value": "[ \"PHP\", \"JavaScript\", \"JQuery\", \"CSS\", \"Sass\", \"HTML\", \"Laravel\", \"React\", \"NextJS\", \"TypeScript\", \"Python\", \"Bash\", \"PowerShell\", \"SQL\" ]",
+        "created_at": "2025-02-09T06:48:39.000000Z",
+        "updated_at": "2025-02-09T06:48:39.000000Z"
+    },
+    {
+        "id": 24,
+        "page_id": 1,
+        "slug": "resume",
+        "key": "skills_software",
+        "value": "[ \"Visual Studio Code\", \"Ollama\", \"PhpStorm\", \"WordPress\", \"Docker\", \"Git\", \"Github\", \"Gitlab\", \"Figma\", \"Adobe Creative Suite\", \"VirtualBox\", \"QEMU\" ]",
+        "created_at": "2025-02-09T06:49:20.000000Z",
+        "updated_at": "2025-02-09T06:49:20.000000Z"
+    },
+    {
+        "id": 25,
+        "page_id": 1,
+        "slug": "resume",
+        "key": "skills_systems",
+        "value": "[ \"MacOS\", \"Arch Linux\", \"Ubuntu Server\", \"WordPress\", \"Atlassian Suite\", \"Circle CI\", \"Linode\", \"Digital Ocean\", \"Amazon Web Services\", \"Active Directory\" ]",
+        "created_at": "2025-02-09T06:49:59.000000Z",
+        "updated_at": "2025-02-09T06:49:59.000000Z"
+    },
+    {
+        "id": 26,
+        "page_id": 2,
+        "slug": "web",
+        "key": "intro_content",
+        "value": "<p>Jason\u2019s love for web development started while exploring HTML and CSS on Codecademy during his time as an educator. What began as a hobby\u2014creating websites for friends and family\u2014quickly turned into a passion for building meaningful digital experiences.<\/p> <p>Now an experienced developer, Jason specializes in tools like JavaScript (in all its various flavors), PHP, and WordPress, combining technical expertise with creative problem-solving to bring ideas to life and deliver solutions that make an impact.<\/p>",
+        "created_at": "2025-02-09T06:51:50.000000Z",
+        "updated_at": "2025-02-09T06:51:50.000000Z"
+    },
+    {
+        "id": 30,
+        "page_id": 3,
+        "slug": "home",
+        "key": "text_content",
+        "value": "<p>Some people head into their careers knowing exactly what they want to do. Jason... not so much.<\/p> <p>Starting as a fourth and fifth grade teacher, Jason found that the classroom simply wasn't what he'd expected. After his position was eliminated in 2016, Jason took the opportunity to join a university IT department as a Help Desk Support Specialist. There, he learned more than he could've possibly imagined he would in such a short time. Thanks to his coworkers and mentor, Jason was able to find his passions were server side.<\/p> <p>Upon leaving his help desk position, Jason joined a marketing company as a Systems Support Technician. There, he learned that the physical side of servers weren't all they were cracked up to be. However, the learning picked up in this position enabled him to start doing his own web development projects, taking his initial exploration of front end development into a new stage.<\/p> <p>His newly realized itch for development needed tending. Jason began pursuing a job that would allow him to grow as a developer and after initially applying for a Junior WordPress Developer position, he was grabbed by the Training team as a dual-role Trainer, Developer. However, upon learning of Jason's expertise on the backend and affinity for picking up new skills, the role was quickly adjusted, making Jason the Training team's Full-Stack Developer.<\/p>",
+        "created_at": "2025-02-09T06:57:59.000000Z",
+        "updated_at": "2025-02-09T06:57:59.000000Z"
+    },
+    {
+        "id": 27,
+        "page_id": 2,
+        "slug": "web",
+        "key": "examples_development",
+        "value": "[\n\t{\n\t\t\"label\": \"Jason-Biggs.com (Laravel)\",\n\t\t\"url\": \"https:\/\/github.com\/awesumsawz\/jason-biggs-com_laravel\"\n\t},\n\t{\n\t\t\"label\": \"ThinkBigg.dev (NextJS)\",\n\t\t\"url\": \"https:\/\/thinkbigg.dev\"\n\t},\n\t{\n\t\t\"label\": \"TechRegular.net (NextJS)\",\n\t\t\"url\": \"https:\/\/github.com\/awesumsawz\/TechRegular-Blog\"\n\t},\n\t{\n\t\t\"label\": \"Wordpress Plugin Sample\",\n\t\t\"url\": \"https:\/\/github.com\/awesumsawz\/MHU-Gravity-Forms-Extended\"\n\t},\n\t{ \n\t\t\"label\": \"Github\", \n\t\t\"url\": \"https:\/\/github.com\/awesumsawz\" \n\t}\n]",
+        "created_at": "2025-02-09T06:52:27.000000Z",
+        "updated_at": "2025-02-09T06:52:27.000000Z"
+    },
+    {
+        "id": 31,
+        "page_id": 3,
+        "slug": "home",
+        "key": "slider_content",
+        "value": "[{\"slide_title\":\"Web Wizard\",\"slide_contents\":\"Taking lines of code and assembling them into web pages and applications has always fascinated Jason and continues to do so today. In his professional experience, Jason has crafted a number of web pages and web sites. In his personal life, Jason maintains several websites for personal and professional use.\",\"cta_url\":\"\/web\",\"cta_button_text\":\"Learn More\",\"slide_image\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/slider\/slider01.jpg\"},{\"slide_title\":\"Resume\",\"slide_contents\":\"This doesn't really need explanation, does it?\",\"cta_url\":\"\/resume\",\"cta_button_text\":\"View the Vita\",\"slide_image\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/slider\/slider02.jpg\"}]",
+        "created_at": "2025-02-09T07:23:20.000000Z",
+        "updated_at": "2025-02-09T07:23:20.000000Z"
+    },
+    {
+        "id": 29,
+        "page_id": 2,
+        "slug": "web",
+        "key": "gallery_content",
+        "value": "[{\"title\":\"Plato 01\",\"description\":\"\",\"date\":\"09\/2023\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-plato-01.jpg\",\"imageAlt\":\"Plato 01\"},{\"title\":\"Plato 02\",\"description\":\"\",\"date\":\"09\/2023\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-plato-02.jpg\",\"imageAlt\":\"Plato 02\"},{\"title\":\"Playbook 01\",\"description\":\"\",\"date\":\"11\/2024\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-playbook-01.jpg\",\"imageAlt\":\"Playbook 01\"},{\"title\":\"Playbook 02\",\"description\":\"\",\"date\":\"11\/2024\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-playbook-02.jpg\",\"imageAlt\":\"Playbook 02\"},{\"title\":\"Training Camp 01\",\"description\":\"\",\"date\":\"11\/2024\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-training_camp-01.jpg\",\"imageAlt\":\"Training Camp 01\"},{\"title\":\"Training Camp 02\",\"description\":\"\",\"date\":\"11\/2024\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-training_camp-02.jpg\",\"imageAlt\":\"Training Camp 02\"},{\"title\":\"Training Camp 03\",\"description\":\"\",\"date\":\"11\/2024\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-training_camp-03.jpg\",\"imageAlt\":\"Training Camp 03\"},{\"title\":\"Training Camp 04\",\"description\":\"\",\"date\":\"11\/2024\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-training_camp-04.jpg\",\"imageAlt\":\"Training Camp 04\"},{\"title\":\"Think Bigg 01\",\"description\":\"\",\"date\":\"11\/2022\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-think_bigg-01.png\",\"imageAlt\":\"Think Bigg 01\"},{\"title\":\"Think Bigg 02\",\"description\":\"\",\"date\":\"11\/2022\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-think_bigg-02.png\",\"imageAlt\":\"Think Bigg 02\"},{\"title\":\"Think Bigg 03\",\"description\":\"\",\"date\":\"11\/2022\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-think_bigg-03.png\",\"imageAlt\":\"Think Bigg 03\"},{\"title\":\"Think Bigg 04\",\"description\":\"\",\"date\":\"11\/2022\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-think_bigg-04.png\",\"imageAlt\":\"Think Bigg 04\"},{\"title\":\"TechRegular 01\",\"description\":\"\",\"date\":\"11\/2022\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-techregular-01.png\",\"imageAlt\":\"TechRegular 01\"},{\"title\":\"TechRegular 02\",\"description\":\"\",\"date\":\"11\/2022\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-techregular-02.png\",\"imageAlt\":\"TechRegular 02\"},{\"title\":\"TechRegular 03\",\"description\":\"\",\"date\":\"11\/2022\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-techregular-03.png\",\"imageAlt\":\"TechRegular 03\"},{\"title\":\"TechRegular 04\",\"description\":\"\",\"date\":\"11\/2022\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-techregular-04.png\",\"imageAlt\":\"TechRegular 04\"},{\"title\":\"TechRegular 05\",\"description\":\"\",\"date\":\"11\/2022\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-techregular-05.png\",\"imageAlt\":\"TechRegular 04\"},{\"title\":\"TechRegular 06\",\"description\":\"\",\"date\":\"11\/2022\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-techregular-06.png\",\"imageAlt\":\"TechRegular 04\"},{\"title\":\"TechRegular 07\",\"description\":\"\",\"date\":\"11\/2022\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-techregular-07.png\",\"imageAlt\":\"TechRegular 04\"},{\"title\":\"Lit Cup 01\",\"description\":\"\",\"date\":\"11\/2024\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-litcup-01.png\",\"imageAlt\":\"Lit Cup 01\"},{\"title\":\"Lit Cup 02\",\"description\":\"\",\"date\":\"11\/2024\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-litcup-02.png\",\"imageAlt\":\"Lit Cup 02\"},{\"title\":\"Lit Cup 03\",\"description\":\"\",\"date\":\"11\/2024\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-litcup-03.png\",\"imageAlt\":\"Lit Cup 03\"},{\"title\":\"Lit Cup 04\",\"description\":\"\",\"date\":\"11\/2024\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-litcup-04.png\",\"imageAlt\":\"Lit Cup 04\"},{\"title\":\"Judson University News 01\",\"description\":\"\",\"date\":\"11\/2022\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-judson-01.png\",\"imageAlt\":\"Judson University News 01\"},{\"title\":\"Judson University News 02\",\"description\":\"\",\"date\":\"11\/2022\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-judson-02.png\",\"imageAlt\":\"Judson University News 02\"},{\"title\":\"Judson University News 03\",\"description\":\"\",\"date\":\"11\/2022\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-judson-03.png\",\"imageAlt\":\"Judson University News 03\"},{\"title\":\"Judson University News 04\",\"description\":\"\",\"date\":\"11\/2022\",\"imageURL\":\"https:\/\/jason-biggs-com--images.s3.us-east-2.amazonaws.com\/gallery\/webdev-judson-04.png\",\"imageAlt\":\"Judson University News 04\"}]",
+        "created_at": "2025-02-09T06:54:34.000000Z",
+        "updated_at": "2025-02-09T06:54:34.000000Z"
+    },
+    {
+        "id": 28,
+        "page_id": 2,
+        "slug": "web",
+        "key": "examples_sites",
+        "value": "[\n\t{ \n\t\t\"label\": \"ThinkBigg.dev\", \n\t\t\"url\": \"https:\/\/thinkbigg.dev\" \n\t},\n\t{ \n\t\t\"label\": \"TechRegular.net\", \n\t\t\"url\": \"https:\/\/techregular.net\" \n\t},\n\t{\n\t\t\"label\": \"Model Horse University (Wordpress)\",\n\t\t\"url\": \"https:\/\/modelhorseuniversity.com\/\"\n\t},\n\t{ \n\t\t\"label\": \"Lit Cup (SquareSpace)\", \n\t\t\"url\": \"https:\/\/litcup.net\" \n\t},\n\t{ \n\t\t\"label\": \"Training Camp\", \n\t\t\"url\": \"https:\/\/training.dealerinspire.com\" \n\t},\n\t{\n\t\t\t\"label\": \"Dealer Inspire Playbook\",\n\t\t\t\"url\": \"https:\/\/playbook.dealerinspire.com\"\n\t}\n]",
+        "created_at": "2025-02-09T06:53:18.000000Z",
+        "updated_at": "2025-02-09T06:53:18.000000Z"
+    }
+]
