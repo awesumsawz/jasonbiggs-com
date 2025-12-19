@@ -8,6 +8,7 @@ This is a personal website for Jason Biggs built with Laravel 11, using modern w
 - **React** - For dynamic, interactive components
 - **Tailwind CSS** - For styling with custom configuration
 - **Vite** - Frontend build tool
+- **Bun** - Fast JavaScript runtime and package manager
 - **Pest** - PHP testing framework
 
 ## Features
@@ -19,7 +20,7 @@ This is a personal website for Jason Biggs built with Laravel 11, using modern w
 
 ## Requirements
 - PHP 8.2+
-- Node.js 20+ (version specified in .nvmrc)
+- Bun 1.0+ (or Node.js 20+ if you prefer npm)
 - Composer
 
 ## Installation
@@ -37,7 +38,7 @@ composer install
 
 3. Install JavaScript dependencies
 ```bash
-npm install
+bun install
 ```
 
 4. Set up environment
@@ -64,7 +65,7 @@ This will concurrently run:
 Or run services individually:
 ```bash
 php artisan serve
-npm run dev
+bun run dev
 ```
 
 ## Blog System
@@ -94,7 +95,7 @@ php artisan test
 ## Building for Production
 
 ```bash
-npm run build
+bun run build
 ```
 
 ## Directory Structure
@@ -117,7 +118,7 @@ Simple, managed deployment with automatic builds from Git.
 
 **Build Command:**
 ```bash
-composer install --no-dev --optimize-autoloader && npm install && npm run build
+composer install --no-dev --optimize-autoloader && bun install && bun run build
 ```
 
 **Run Command:**
@@ -134,7 +135,7 @@ php artisan optimize && php artisan serve --host=0.0.0.0 --port=8080
 - `QUEUE_CONNECTION=sync`
 
 ### Traditional VPS
-Deploy to any VPS with PHP 8.2+, Nginx/Apache, and Node.js. No database required!
+Deploy to any VPS with PHP 8.2+, Nginx/Apache, and Bun (or Node.js). No database required!
 
 **Basic Nginx Configuration:**
 ```nginx
