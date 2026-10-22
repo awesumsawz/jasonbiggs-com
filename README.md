@@ -18,7 +18,7 @@ This is a personal website for Jason Biggs built with Laravel 11, using modern w
 - Custom font integration (DDC Hardware, Roboto Mono, Open Sans)
 
 ## Requirements
-- PHP 8.2+
+- PHP 8.2.35+, 8.3.36+, 8.4.27+, or 8.5.12+ (PHP2Shell-fixed releases)
 - Node.js 20+ (version specified in .nvmrc)
 - Composer
 
@@ -134,7 +134,7 @@ php artisan optimize && php artisan serve --host=0.0.0.0 --port=8080
 - `QUEUE_CONNECTION=sync`
 
 ### Traditional VPS
-Deploy to any VPS with PHP 8.2+, Nginx/Apache, and Node.js. No database required!
+Deploy to any VPS with a PHP2Shell-fixed release (PHP 8.2.35+, 8.3.36+, 8.4.27+, or 8.5.12+), Nginx/Apache, and Node.js. No database required!
 
 **Basic Nginx Configuration:**
 ```nginx
@@ -165,7 +165,7 @@ server {
 ```
 
 ### Shared Hosting
-Compatible with shared hosting that supports PHP 8.2+ and allows setting document root to `public/`.
+Compatible with shared hosting that supports a PHP2Shell-fixed release (PHP 8.2.35+, 8.3.36+, 8.4.27+, or 8.5.12+) and allows setting document root to `public/`.
 
 ## Content Management
 
