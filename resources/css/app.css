@@ -487,7 +487,7 @@ header.navbar .menu.secondary ul a {
   }
 
   .blog-card .card-excerpt {
-    @apply text-dark-gray dark:text-light-gray mb-4 font-mono text-[1.6rem] leading-relaxed flex-grow;
+    @apply text-dark-gray dark:text-light-gray mb-4 font-mono text-[1.6rem] leading-relaxed grow;
   }
 
   .blog-card .card-link {
@@ -699,36 +699,6 @@ header.navbar .menu.secondary ul a {
 
   .blog-post .post-navigation .nav-placeholder {
     @apply flex-1;
-  }
-
-  /* Container styles */
-  .container {
-    @apply px-4 mx-auto;
-  }
-
-  /* Match SASS exact breakpoint values */
-  @media (min-width: 30em) {
-    .container {
-      max-width: 30em; /* 480px - $mobile-width */
-    }
-  }
-
-  @media (min-width: 50em) {
-    .container {
-      max-width: 50em; /* 800px - $tablet-width */
-    }
-  }
-
-  @media (min-width: 64em) {
-    .container {
-      max-width: 64em; /* 1024px */
-    }
-  }
-
-  @media (min-width: 80em) {
-    .container {
-      max-width: 80em; /* 1280px */
-    }
   }
 
   /* Blog post content styles */
@@ -1271,7 +1241,7 @@ to {
 }
 
 .tag-filter select {
-  @apply font-mono text-[1.4rem] px-3 py-2 rounded-md border border-light-gray dark:border-gray bg-white dark:bg-dark-gray text-dark-gray dark:text-light-gray focus:border-primary dark:focus:border-primary-light outline-none;
+  @apply font-mono text-[1.4rem] px-3 py-2 rounded-md border border-light-gray dark:border-gray bg-white dark:bg-dark-gray text-dark-gray dark:text-light-gray focus:border-primary dark:focus:border-primary-light outline-hidden;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1292,7 +1262,7 @@ to {
 }
 
 .per-page-selector select {
-  @apply font-mono text-[1.4rem] px-3 py-2 rounded-md border border-light-gray dark:border-gray bg-white dark:bg-dark-gray text-dark-gray dark:text-light-gray focus:border-primary dark:focus:border-primary-light outline-none;
+  @apply font-mono text-[1.4rem] px-3 py-2 rounded-md border border-light-gray dark:border-gray bg-white dark:bg-dark-gray text-dark-gray dark:text-light-gray focus:border-primary dark:focus:border-primary-light outline-hidden;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1313,7 +1283,7 @@ to {
   }
 
   .tag-filter select, .per-page-selector select {
-    @apply flex-grow;
+    @apply grow;
   }
 }
 
@@ -1444,4 +1414,35 @@ to {
 
 #mobile-menu .mobile-logo img:hover {
   transform: scale(1.05);
+}
+
+@layer utilities {
+  .container {
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+
+  @media (min-width: 30em) {
+    .container {
+      max-width: 30em;
+    }
+  }
+
+  @media (min-width: 50em) {
+    .container {
+      max-width: 50em;
+    }
+  }
+
+  @media (min-width: 64em) {
+    .container {
+      max-width: 64em;
+    }
+  }
+
+  @media (min-width: 80em) {
+    .container {
+      max-width: 80em;
+    }
+  }
 }
