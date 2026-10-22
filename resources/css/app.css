@@ -1,6 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../../tailwind.config.js";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
 
 /* Font faces - Exact matching of SASS font imports */
 @font-face {
@@ -706,25 +707,25 @@ header.navbar .menu.secondary ul a {
   }
 
   /* Match SASS exact breakpoint values */
-  @screen sm {
+  @media (min-width: 30em) {
     .container {
       max-width: 30em; /* 480px - $mobile-width */
     }
   }
 
-  @screen md {
+  @media (min-width: 50em) {
     .container {
       max-width: 50em; /* 800px - $tablet-width */
     }
   }
 
-  @screen lg {
+  @media (min-width: 64em) {
     .container {
       max-width: 64em; /* 1024px */
     }
   }
 
-  @screen xl {
+  @media (min-width: 80em) {
     .container {
       max-width: 80em; /* 1280px */
     }

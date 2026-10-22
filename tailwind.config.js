@@ -1,6 +1,4 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
-import forms from '@tailwindcss/forms';
-import typography from '@tailwindcss/typography';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -156,8 +154,8 @@ export default {
                     css: {
                         color: theme('colors.dark-gray'),
                         maxWidth: 'none',
-                        fontFamily: theme('fontFamily.mono'),
-                        fontSize: theme('fontSize.3xl'),
+                        'font-family': theme('fontFamily.mono').join(', '),
+                        'font-size': theme('fontSize.3xl'),
                         fontWeight: theme('fontWeight.normal'),
                         lineHeight: theme('lineHeight.normal'),
                         a: {
@@ -168,51 +166,51 @@ export default {
                             },
                         },
                         'h1': {
-                            fontFamily: theme('fontFamily.display'),
-                            fontSize: theme('fontSize.9xl'),
+                            'font-family': theme('fontFamily.display').join(', '),
+                            'font-size': theme('fontSize.9xl'),
                             color: theme('colors.primary.DEFAULT'),
                             fontWeight: theme('fontWeight.normal'),
                             lineHeight: theme('lineHeight.tight'),
                             marginBottom: '1rem',
                         },
                         'h2': {
-                            fontFamily: theme('fontFamily.display'),
-                            fontSize: theme('fontSize.8xl'),
+                            'font-family': theme('fontFamily.display').join(', '),
+                            'font-size': theme('fontSize.8xl'),
                             color: theme('colors.primary.DEFAULT'),
                             fontWeight: theme('fontWeight.normal'),
                             lineHeight: theme('lineHeight.tight'),
                             marginBottom: '1rem',
                         },
                         'h3': {
-                            fontFamily: theme('fontFamily.mono'),
-                            fontSize: theme('fontSize.7xl'),
+                            'font-family': theme('fontFamily.mono').join(', '),
+                            'font-size': theme('fontSize.7xl'),
                             fontWeight: theme('fontWeight.extrabold'),
                             lineHeight: theme('lineHeight.tight'),
                             margin: '0',
                         },
                         'h4': {
-                            fontFamily: theme('fontFamily.mono'),
-                            fontSize: theme('fontSize.6xl'),
+                            'font-family': theme('fontFamily.mono').join(', '),
+                            'font-size': theme('fontSize.6xl'),
                             fontWeight: theme('fontWeight.extrabold'),
                             lineHeight: theme('lineHeight.tight'),
                             margin: '0',
                         },
                         'h5': {
-                            fontFamily: theme('fontFamily.mono'),
-                            fontSize: theme('fontSize.5xl'),
+                            'font-family': theme('fontFamily.mono').join(', '),
+                            'font-size': theme('fontSize.5xl'),
                             fontWeight: theme('fontWeight.light'),
                             lineHeight: theme('lineHeight.tight'),
                             margin: '0',
                         },
                         'h6': {
-                            fontFamily: theme('fontFamily.mono'),
-                            fontSize: theme('fontSize.4xl'),
+                            'font-family': theme('fontFamily.mono').join(', '),
+                            'font-size': theme('fontSize.4xl'),
                             fontWeight: theme('fontWeight.extrabold'),
                             lineHeight: theme('lineHeight.tight'),
                             margin: '0',
                         },
                         code: {
-                            fontFamily: theme('fontFamily.mono'),
+                            'font-family': theme('fontFamily.mono').join(', '),
                             color: theme('colors.dark-gray'),
                             backgroundColor: theme('colors.light-gray'),
                             borderRadius: theme('borderRadius.standard'),
@@ -260,8 +258,4 @@ export default {
         },
     },
 
-    plugins: [
-        forms,
-        typography,
-    ],
 };
